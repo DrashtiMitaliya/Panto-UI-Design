@@ -1,0 +1,13 @@
+@import './variable';
+@import './breakpoints';
+
+*{
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0 ;
+}
+.container{
+    @media (min-width :map-get($breakpoints,xxl)){
+        max-width: 1200px !important;
+    }
+}
