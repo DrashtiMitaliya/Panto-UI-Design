@@ -1,7 +1,17 @@
+@import '../assets/scss/breakpoints';
+
+
 .homeImg {
-    background-image: url('../assets/images/Homepage.svg');
+    
     background-size: contain;
     background-repeat: no-repeat;
     height: 1084px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #FFFFFF 100%), url('../assets/images/Homepage.svg');
 
+    @media (min-width :map-get($breakpoints, xxl)) {
+        background-size: cover;
+        height: 1084px;
+    }
 }
+
+

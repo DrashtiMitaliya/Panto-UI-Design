@@ -1,0 +1,38 @@
+.product {
+
+    // height: 906px;   
+    background-color: #F7F7F7;
+
+    .heading {
+        // font-size: 500px;
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        line-height: 49px;
+        color: #1E1E1E;
+        padding-top: 50px;
+        margin-inline: 526px;
+        margin-bottom: 32px;
+        width: 389px;
+    }
+
+    .product_list {
+        border-radius: 44px;
+        width: 348px;
+        margin-inline: 546px;
+        justify-content: space-between;
+        background: #EEEEEE;
+        padding: 6px;
+    }
+
+    .products {
+        padding-inline: 21px;
+        padding-block: 7px;
+    }
+
+    .active {
+        border: #1E1E1E;
+        background-color: white;
+        border-radius: 32px;
+        width: 84px;
+    }
+}

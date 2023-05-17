@@ -1,0 +1,82 @@
+.chair {
+    margin-top: 80px;
+    // width: 1200px;
+    margin-inline: 96px;
+
+    .chairCard {
+        background: white;
+        border-radius: 20px;
+        width: 268px;
+        height: 442px;
+    }
+
+    .chair_img {
+        background: #FAFAFA
+    }
+
+    .imgs {
+        margin-top: -50px;
+        margin-inline: 18px;
+        justify-content: center;
+    }
+
+    .text_area {
+        margin-inline: 21px;
+        margin-top: 13px;
+        margin-bottom: 27px;
+
+    }
+
+    .sub {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.7554px;
+        line-height: 20px;
+        color: #8D8D8D;
+    }
+
+    .names {
+        margin-block: 6px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21.3251px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #0D1B39;
+    }
+
+    .star {
+        margin-top: 8px;
+    }
+
+    .dollar {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15.2322px;
+        line-height: 18px;
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .price {
+
+
+
+        font-size: 21.3251px;
+
+        color: #0D1B39;
+        margin-left: 9px;
+
+        margin-top: 50px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+padding: 5px;
+        line-height: 36px;
+        color: #0D1B39
+    }
+
+}

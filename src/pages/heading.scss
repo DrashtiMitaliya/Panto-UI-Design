@@ -1,0 +1,48 @@
+.main_Heading {
+    font-size: 80px;
+    color: white;
+    font-family: 'Gilroy-Bold';
+    margin-inline: 260px;
+    text-align: center;
+    margin-top: 161px;
+    line-height: 104px;
+
+}
+
+.sub_Heading {
+    font-family: 'Gilroy-Regular';
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-top: 14px;
+    margin-inline: 388px;
+}
+
+.input_div {
+    position: relative;
+    margin-top: 10px;
+    margin-inline: 578px;
+    padding: 8px 8px 8px 20px;
+    border: 0.861538px solid rgba(255, 255, 255, 0.6);
+    border-radius: 42px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    width: 344px;
+
+    .searchbar_icon {
+        position: absolute;
+        right: 3px;
+        top: 2px;
+    }
+}
+
+.input_text {
+    background: transparent;
+    border: 0;
+    
+    font-family: 'Gilroy-Regular';
+    line-height: 27px;
+    font-size: 18px;
+}

@@ -1,0 +1,45 @@
+.choose {
+    margin-inline: 80px;
+    .choose_text {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        line-height: 49px;
+        color: #1E1E1E;
+        margin-top: 158px;
+       width: 276px;
+       text-align: start;
+    }
+    .choose_items{
+        width: 284px;
+           
+    }
+    .choose_name {
+        font-family: 'Gilroy-Bold';
+        font-size: 24px;
+        margin-top: 120px;
+        line-height: 28px;
+        color: #1E1E1E;
+        opacity: 0.9;
+        margin-left: 30px;
+    }
+
+    .choose_detail {
+        font-family: 'Gilroy-Regular';
+        font-size: 16px;
+        line-height: 30px;
+        color: #1E1E1E;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-inline: 28px;
+        opacity: 0.8;
+        width: 284px;    
+    }
+    .aero_text {
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 26px;
+        color: #E58411;
+        margin-left: 30px;
+        margin-bottom: 120px;
+    }
+}

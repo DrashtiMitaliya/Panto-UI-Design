@@ -1,14 +1,28 @@
 @import '../../assets/scss/App.scss';
-@import '../../assets/fonts/style.css';
+@import '../../assets/fonts/style.scss';
 
-// .panto{
-//     font-size: 28px !important;
-//     margin-left: 80px ;
-//     margin-top: 40px;
-// }
+
+.panto {
+    font-family: 'Gilroy-Bold';
+    margin-left: 80px;
+    margin-top: 40px;
+    justify-content: center;
+
+    &_features {
+        margin-inline: 31px;
+        margin-top: 45px;
+        font-family: 'Gilroy-Medium';
+
+        @media (max-width:map-get($breakpoints,xxl)){
+            margin-top: 11px;
+        }
+    }
+
+}
 
 .basket {
     position: absolute;
+    margin-right: 104px;
 
     &_badge {
         position: relative;
@@ -19,4 +33,18 @@
         top: 2px;
         font-size: 12px;
     }
+}
+
+#navbarScrollingDropdown {
+    color: white !important;
+    margin-inline: 31px;
+    margin-top: 45px;
+    font-family: 'Gilroy-Medium';
+    @media (max-width:map-get($breakpoints,xxl)){
+        margin-top: 11px;
+    }
+}
+.bucket_class{
+    margin-right: 80.26px;
+    display: inline-block !important;
 }
