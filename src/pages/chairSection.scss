@@ -62,21 +62,26 @@
     }
 
     .price {
-
-
-
         font-size: 21.3251px;
-
         color: #0D1B39;
         margin-left: 9px;
-
         margin-top: 50px;
         font-family: "Inter";
         font-style: normal;
         font-weight: 600;
-padding: 5px;
+        padding: 5px;
         line-height: 36px;
         color: #0D1B39
     }
 
+    .aero_text {
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 26px;
+        color: #E58411;
+        margin-top: 60px;
+        margin-inline: 578px;
+       padding-bottom: 50px;
+        width: 101px;
+    }
 }
