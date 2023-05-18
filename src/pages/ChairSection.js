@@ -3,7 +3,7 @@ import ".././components/Constant/ChairData";
 import { ChairData } from ".././components/Constant/ChairData";
 import "./chairSection.scss";
 import plus from "../assets/images/Vector.svg";
-import aero from "../assets/images/orange_aero.svg"
+import aero from "../assets/images/orange_aero.svg";
 
 const ChairSection = () => {
   return (
@@ -20,24 +20,26 @@ const ChairSection = () => {
                 <div className="names">{chair.name}</div>
                 <div className="star"> ⭐ ⭐ ⭐ ⭐ ⭐</div>
                 <div>
-                  <div className="price d-flex">
+                  <div className="price d-flex justify-content-between">
+                    <div className="d-flex">
                     <span className="dollar me-1">$</span>
                     {chair.price}
+                    </div>
+                    <img src={plus} className="plus" alt="" />
                   </div>
-                  <div className="plus" style={{backgroundColor:'red'}}>
-                    <img src={plus}  alt="" />
+                  
+                  <div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
-          
         ))}
       </div>
       <div>
         <div className="aero_text">
-         View All <img src={aero} alt="" />
+          View All <img src={aero} alt="" />
         </div>
       </div>
     </div>

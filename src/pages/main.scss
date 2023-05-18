@@ -2,16 +2,43 @@
 
 
 .homeImg {
-    
-    background-size: contain;
+
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 1084px;
+    min-height: 1084px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #FFFFFF 100%), url('../assets/images/Homepage.svg');
 
-    @media (min-width :map-get($breakpoints, xxl)) {
-        background-size: cover;
-        height: 1084px;
+
+    @media (max-width:map-get($breakpoints, xxl)) {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        min-height: 1081px !important;
     }
+    @media (max-width:map-get($breakpoints, xl)) {
+        background-size: contain;
+        min-height: 1011px !important;
+    }
+
+    @media (max-width:map-get($breakpoints, lg)) {
+        min-height: 818px !important;
+    }
+
+    @media (max-width:map-get($breakpoints, md)) {
+        min-height: 643px !important;
+    }
+
+    @media (max-width:map-get($breakpoints, sm)) {
+        min-height: 486px !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+
+    }
+    @media (max-width:map-get($breakpoints, xs)) {
+        min-height: 426px !important;
+    }
+
+
+
+
+
 }
-
-

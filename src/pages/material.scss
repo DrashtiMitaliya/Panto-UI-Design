@@ -1,5 +1,7 @@
 .material {
-    // margin-top: 270px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
 
     .materials {
         font-family: 'Gilroy-Medium';
@@ -7,7 +9,7 @@
         line-height: 21px;
         letter-spacing: 0.175em;
         text-transform: uppercase;
-        margin-top: 364px;
+        margin-top: 264px;
         color: #E58411;
         margin-left: 80px;
         margin-bottom: 20px;
@@ -36,7 +38,39 @@
         margin-bottom: 24px;
     }
 
-    .aero_text{
+    .aero_text {
         margin-left: 80px;
+    }
+}
+
+.imgs_section {
+    position: relative;
+    top: 170px;
+    
+
+    .m_img1 {
+        position: absolute;
+        margin-right: 487px;
+        margin-bottom: 47px;
+     
+    }
+
+    .m_img2 {
+        position: absolute;
+        top: 276px;
+        
+    }
+
+    .m_img3 {
+        position: absolute;
+        right: 0;
+        top: 145px;
+    }
+
+    .m_img4 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 74px;
     }
 }
