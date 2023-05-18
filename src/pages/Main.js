@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <>
       <div className="homeImg">
-        <Header />
+    
         <Heading/>
       </div>
     </>

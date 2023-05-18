@@ -1,5 +1,6 @@
 .img_class {
     margin-top: 306px;
+    position: relative;
 
     .firstBehindImg {
         z-index: -1;
@@ -7,26 +8,21 @@
         width: 495px;
         left: -38px;
         right: 172px;
-        margin-top: 240px;
-
+      top: 240px;
     }
-
     .frontImg {
         top: 306px;
-        position: relative;
-        width: 629px;
-        height: 445px;
-        margin-left: -7px;
+        position: absolute;
+        // width: 629px;
+        // height: 445px;
+        // margin-left: -7px;
     }
-
     .secondBehindImg {
         position: absolute;
         left: 195px;
-        margin-top: 378px;
+        top: 378px;
         z-index: -1;
     }
-
-
 }
 
 .experiences {

@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
       <Main/>
-      {/* <Choose/> 
+      <Choose/> 
       <Product/>
       <Experience/>
       <Materials/>
       <Client/>
-      <Footer/> */}
+      <Footer/>
     </div>
   );
 }

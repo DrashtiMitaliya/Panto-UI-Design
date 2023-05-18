@@ -2,75 +2,66 @@
 @import '../../assets/fonts/style.scss';
 
 
-.panto {
-    font-family: 'Gilroy-Bold';
-    margin-left: 80px;
-    margin-top: 40px;
-
-    @media (max-width:map-get($breakpoints, xl)) {
-        margin-left: 60px !important;
-        margin-top: 17px !important;
-    }
-
-    @media (max-width:map-get($breakpoints, lg)) {
-        margin-left: 50px !important;
-        margin-top: 10px !important;
-    }
-
-    @media (max-width:map-get($breakpoints, md)) {
-        margin-left: 50px !important;
-        margin-top: 10px !important;
-    }
-
-    @media (max-width:map-get($breakpoints, sm)) {
-        margin-left: 1px !important;
-        margin-top: 1px !important;
-        font-size: 17px !important;
-    }
-
-    &_features {
-        margin-inline: 31px;
-        margin-top: 45px;
-        font-family: 'Gilroy-Medium';
-
-        @media (max-width:map-get($breakpoints, xxl)) {
-            margin-top: 10px !important;
-           
+.header{
+    .pantoHeader{
+        font-family: 'Gilroy-Bold';
+        padding: 40px 90px 00px 100px;
+        @media (max-width:map-get($breakpoints,sm)) {
+            padding: 40px 50px 00px 50px !important;
+         }
+        .navbar-toggler-icon{
+            background-color: $primary-color;
         }
-        @media (max-width:map-get($breakpoints, lg)) {
-            margin-top: 0px !important;
+        .pantoTitle{
+            font-size: 28px;
+            @media (max-width:400px) {
+                font-size: 20px !important;
+            }
+        }
+        .pantoDropdown a {
+            font-family: 'Gilroy-Medium';
+            color: $primary-color;
+            font-size: 18px;
+        }
+        .basic-nav-dropdown span {
+            font-family: 'Gilroy-Medium';
+            background-color : $primary-color;
+        }
+        .pantoShop{
+            font-family: 'Gilroy-Medium';
+            color: $primary-color;
+            font-size: 18px;
+            padding-left: 69px !important;
+        }
+        .pantoAbout{
+            font-family: 'Gilroy-Medium';
+            color: $primary-color;
+            font-size: 18px;
+            padding-left: 62px !important;
+        }
+        .pantoContact{
+            font-family: 'Gilroy-Medium';
+            color: $primary-color;
+            font-size: 18px;
+            padding-left: 64px !important;
+        }
+    }
+    .pantoLogo{
+        position: absolute;
+        right: 40px;
+        top: 45px;
+         @media (max-width:map-get($breakpoints,lg)) {
+                display: inline-block !important;
+        }
+        .counter{
+            font-size: 15px;
+            color: $primary-color;
+            position: absolute;
+            padding: 3px 6px 3px 6px;
+            right: 0px;
+            top: 0px;
+            background-color: $secondary-color;
+            border-radius: 50%;
         }
     }
 }
-
-.basket {
-    position: absolute;
-    margin-right: 104px;
-
-    &_badge {
-        position: relative;
-        background-color: $badge-color;
-        left: 18px;
-        border-radius: 50%;
-        padding: 2px 4px;
-        top: 2px;
-        font-size: 12px;
-    }
-}
-
-#navbarScrollingDropdown {
-    color: white !important;
-    margin-inline: 31px;
-    margin-top: 45px;
-    font-family: 'Gilroy-Medium';
-
-    @media (max-width:map-get($breakpoints, xxl)) {
-        margin-top: 11px;
-    }
-}
-
-.bucket_class {
-    margin-right: 80.26px;
-    display: inline-block !important;
-}
-

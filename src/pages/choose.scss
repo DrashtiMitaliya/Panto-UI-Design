@@ -1,18 +1,37 @@
+@import '../assets/scss/App.scss';
+
 .choose {
     margin-inline: 80px;
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-inline: 4px !important;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-inline: 2px !important;
+    }
+
     .choose_text {
         font-family: 'Gilroy-Bold';
         font-size: 42px;
         line-height: 49px;
         color: #1E1E1E;
         margin-top: 158px;
-       width: 276px;
-       text-align: start;
+        width: 276px;
+        text-align: start;
+
+        @media (max-width :map-get($breakpoints , md)) {
+            font-size: 25px !important;
+        }
+        @media (max-width :map-get($breakpoints , sm)) {
+           font-size: 21px !important;
+        }
+
     }
-    .choose_items{
+    .choose_items {
         width: 284px;
-           
     }
+
     .choose_name {
         font-family: 'Gilroy-Bold';
         font-size: 24px;
@@ -32,8 +51,9 @@
         margin-bottom: 20px;
         margin-inline: 28px;
         opacity: 0.8;
-        width: 284px;    
+        width: 284px;
     }
+
     .aero_text {
         font-family: 'Gilroy-Medium';
         font-size: 14px;

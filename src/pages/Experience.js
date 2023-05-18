@@ -9,12 +9,12 @@ const Experience = () => {
     return (
         <div>
             <div className="row">
-                <div className="col-6 img_class">
+                <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 img_class  ">
                     <img src={exp1} alt="" className='firstBehindImg' />
                     <img src={exp2} alt="" className='frontImg' />
                     <img src={exp3} alt="" className='secondBehindImg' />
                 </div>
-                <div className="col-6 text_class">
+                <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 text_class  ">
                     <div className='experiences'>EXPERIENCES</div>
                     <div className='title'>we provide you the best experience</div>
                     <div className='detail'>You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</div>

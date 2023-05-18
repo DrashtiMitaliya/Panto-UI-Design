@@ -1,113 +1,174 @@
 @import '../assets/scss/App.scss';
 
-.main_Heading {
-    font-size: 80px;
-    color: white;
-    font-family: 'Gilroy-Bold';
-    margin-inline: 260px;
-    text-align: center;
-    margin-top: 110px;
-    line-height: 104px;
-    
-
+.hero {
+    height: 1084px;
+    background: url(../assets/images/Homepage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     @media (max-width:map-get($breakpoints, xxl)) {
-        font-size: 50px !important;
-        margin-top: 80px !important;
-        line-height: 60px !important;
-        margin-inline: 110px !important;
+        height: 1050px !important;
     }
-    @media (max-width:map-get($breakpoints, xl)) {
-        font-size: 50px !important;
-        margin-top: 80px !important;
-        line-height: 60px !important;
-        margin-inline: 100px !important;
+    @media (max-width:map-get($breakpoints, xxl)) {
+        height: 900px !important;
     }
-
     @media (max-width:map-get($breakpoints, lg)) {
-        font-size: 40px !important;
-        margin-top: 70px !important;
-        line-height: 60px !important;
-        margin-inline: 90px !important;
+        height: 900px !important;
     }
-
     @media (max-width:map-get($breakpoints, md)) {
-        font-size: 30px !important;
-        margin-top: 68px !important;
-        line-height: 50px !important;
-        margin-inline: 80px !important;
+        height: 900px !important;
     }
-
     @media (max-width:map-get($breakpoints, sm)) {
-        font-size: 24px !important;
-        margin-top: 38px !important;
-        line-height: 40px !important;
-        margin-inline: 50px !important;
+      height: 900px !important;
     }
-
-}
-
-.sub_Heading {
-    font-family: 'Gilroy-Regular';
-    font-size: 24px;
-    line-height: 38px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-top: 14px;
-    margin-inline: 388px;
-
-    @media (max-width:map-get($breakpoints, xl)) {
-        font-size: 20px !important;
-        line-height: 34px  !important;
-        margin-top: 12px  !important;
-        margin-inline: 320px  !important;
+    @media (max-width:400px) {
+       height: 800px !important;
     }
-
-    @media (max-width:map-get($breakpoints, lg)) {
-        font-size: 16px !important;
-        line-height: 30px  !important;
-        margin-top: 8px  !important;
-        margin-inline: 260px  !important;
+    .heroDetail {
+        .heroTitle {
+            font-family: 'Gilroy-Bold';
+            margin-top: 92px !important;
+            @media (max-width:map-get($breakpoints, lg)) {
+                margin-top: 80px !important;
+            }
+            @media (max-width:map-get($breakpoints, md)) {
+                margin-top: 70px !important;
+            }
+            @media (max-width:map-get($breakpoints, sm)) {
+              margin-top: 75px !important;
+            }
+            @media (max-width:400px) {
+               margin-top: 70px !important;
+            }
+            .heroTitleText {
+                color: $primary-color;
+                margin: auto;
+                width: 900px;
+                font-size: 80px;
+                line-height: 130%;
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 78px;
+                }
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 65px;
+                }
+                @media (max-width:map-get($breakpoints, lg)) {
+                    font-size: 50px;
+                    width: 650px !important;
+                }
+                @media (max-width:map-get($breakpoints, md)) {
+                    font-size: 40px;
+                    width: 500px !important;
+                }
+                @media (max-width:map-get($breakpoints, sm)) {
+                   font-size: 40px;
+                   width: 400px !important;
+                }
+                @media (max-width:400px) {
+                    font-size: 30px;
+                    width: 300px !important;
+                }
+            }
+        }
+        .heroContent {
+            margin-top: 14px !important;
+            @media (max-width:map-get($breakpoints, lg)) {
+                margin-top: 12px !important;
+            }
+            @media (max-width:map-get($breakpoints, md)) {
+                margin-top: 10px !important;
+            }
+            @media (max-width:map-get($breakpoints, sm)) {
+              margin-top: 08px !important;
+            }
+            @media (max-width:400px) {
+               margin-top: 07px !important;
+            }
+            .heroContentText {
+                font-family: 'Gilroy-Regular';
+                width: 606px;
+                color: $primary-color;
+                font-size: 24px;
+                line-height: 38.4px;
+                margin: auto;
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 22px;
+                    width: 500px !important;
+                }
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 20px;
+                    width: 500px !important;
+                }
+                @media (max-width:map-get($breakpoints, lg)) {
+                    font-size: 18px;
+                    width: 450px !important;
+                }
+                @media (max-width:map-get($breakpoints, md)) {
+                    font-size: 16px;
+                    width: 400px !important;
+                }
+                @media (max-width:map-get($breakpoints, sm)) {
+                   font-size: 15px;
+                   width: 380px !important;
+                }
+                @media (max-width:400px) {
+                    font-size: 12px;
+                    width: 300px !important;
+                }
+            }
+        }
     }
-
-    @media (max-width:map-get($breakpoints, md)) {
-         font-size: 12px !important;
-        line-height: 21px  !important;
-        margin-top: 8px  !important;
-        margin-inline: 200px  !important;
+    .heroSearch {
+        width: 344px;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        padding-top: 45px;
+        @media (max-width:map-get($breakpoints, lg)) {
+            width: 320px !important;
+            padding-top: 35px !important;
+        }
+        @media (max-width:map-get($breakpoints, md)) {
+            width: 300px !important;
+            padding-top: 28px !important;
+        }
+        @media (max-width:map-get($breakpoints, sm)) {
+           width: 270px !important;
+           padding-top: 23px !important;
+        }
+        @media (max-width:400px) {
+            width: 250px !important;
+            padding-top: 15px !important;
+        }
+        .heroSearchInput {
+            background: rgba(255, 255, 255, 0.15);
+            border: 0.861538px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(4px);
+            border-radius: 42px;
+            height: 56px;
+        }
+        .heroSearchInput::placeholder {
+            color: $primary-color;
+            opacity: 0.8;
+            font-family: 'Gilroy-Regular';
+            padding-left: 08px;
+            font-size: 18px;
+        }
+        .searchBtn {
+            position: absolute;
+            top: 52px;
+            right: 8px;
+            @media (max-width:map-get($breakpoints, lg)) {
+               top: 43px;
+            }
+            @media (max-width:map-get($breakpoints, md)) {
+                top: 35px !important;
+            }
+            @media (max-width:map-get($breakpoints, sm)) {
+                top: 30px !important;
+            }
+            @media (max-width:400px) {
+                top: 22px !important;
+            }
+        }
     }
-
-    @media (max-width:map-get($breakpoints, sm)) {
-        font-size: 8px !important;
-        line-height: 10px  !important;
-        margin-top: 8px  !important;
-        margin-inline: 80px  !important;
-    }
-}
-
-.input_div {
-    position: relative;
-    margin-top: 10px;
-    margin-inline: 578px;
-    padding: 8px 8px 8px 20px;
-    border: 0.861538px solid rgba(255, 255, 255, 0.6);
-    border-radius: 42px;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.15);
-    width: 344px;
-
-    .searchbar_icon {
-        position: absolute;
-        right: 3px;
-        top: 2px;
-    }
-}
-
-.input_text {
-    background: transparent;
-    border: 0;
-
-    font-family: 'Gilroy-Regular';
-    line-height: 27px;
-    font-size: 18px;
 }

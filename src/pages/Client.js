@@ -11,7 +11,7 @@ const Client = () => {
       <div className="row client_reviews">Our Client Reviews</div>
       <div className="row cards">
         {ClientReview.map((client) => (
-          <div className="col-4 client_card">
+          <div className="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 client_card  m-md-2 m-sm-2 m-lg-2 ">
             <img src={client.bgImg} alt="" />
             <div className="sub_card">
               <img src={union} alt="" />

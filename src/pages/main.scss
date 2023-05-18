@@ -1,44 +1,174 @@
-@import '../assets/scss/breakpoints';
+@import '../assets/scss/App.scss';
 
-
-.homeImg {
-
-    background-size: cover;
+.hero {
+    height: 1084px;
+    background: url(../../src/assets//images/Homepage.svg);
     background-repeat: no-repeat;
-    min-height: 1084px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #FFFFFF 100%), url('../assets/images/Homepage.svg');
-
-
+    background-size: cover;
     @media (max-width:map-get($breakpoints, xxl)) {
-        background-size: cover !important;
-        background-repeat: no-repeat;
-        min-height: 1081px !important;
+        height: 1050px !important;
     }
-    @media (max-width:map-get($breakpoints, xl)) {
-        background-size: contain;
-        min-height: 1011px !important;
+    @media (max-width:map-get($breakpoints, xxl)) {
+        height: 900px !important;
     }
-
     @media (max-width:map-get($breakpoints, lg)) {
-        min-height: 818px !important;
+        height: 900px !important;
     }
-
     @media (max-width:map-get($breakpoints, md)) {
-        min-height: 643px !important;
+        height: 900px !important;
     }
-
     @media (max-width:map-get($breakpoints, sm)) {
-        min-height: 486px !important;
-        background-size: cover !important;
-        background-repeat: no-repeat;
-
+      height: 900px !important;
     }
-    @media (max-width:map-get($breakpoints, xs)) {
-        min-height: 426px !important;
+    @media (max-width:400px) {
+       height: 800px !important;
     }
-
-
-
-
-
+    .heroDetail {
+        .heroTitle {
+            font-family: 'Gilroy-Bold';
+            margin-top: 92px !important;
+            @media (max-width:map-get($breakpoints, lg)) {
+                margin-top: 80px !important;
+            }
+            @media (max-width:map-get($breakpoints, md)) {
+                margin-top: 70px !important;
+            }
+            @media (max-width:map-get($breakpoints, sm)) {
+              margin-top: 75px !important;
+            }
+            @media (max-width:400px) {
+               margin-top: 70px !important;
+            }
+            .heroTitleText {
+                color: $primary-color;
+                margin: auto;
+                width: 900px;
+                font-size: 80px;
+                line-height: 130%;
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 78px;
+                }
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 65px;
+                }
+                @media (max-width:map-get($breakpoints, lg)) {
+                    font-size: 50px;
+                    width: 650px !important;
+                }
+                @media (max-width:map-get($breakpoints, md)) {
+                    font-size: 40px;
+                    width: 500px !important;
+                }
+                @media (max-width:map-get($breakpoints, sm)) {
+                   font-size: 40px;
+                   width: 400px !important;
+                }
+                @media (max-width:400px) {
+                    font-size: 30px;
+                    width: 300px !important;
+                }
+            }
+        }
+        .heroContent {
+            margin-top: 14px !important;
+            @media (max-width:map-get($breakpoints, lg)) {
+                margin-top: 12px !important;
+            }
+            @media (max-width:map-get($breakpoints, md)) {
+                margin-top: 10px !important;
+            }
+            @media (max-width:map-get($breakpoints, sm)) {
+              margin-top: 08px !important;
+            }
+            @media (max-width:400px) {
+               margin-top: 07px !important;
+            }
+            .heroContentText {
+                font-family: 'Gilroy-Regular';
+                width: 606px;
+                color: $primary-color;
+                font-size: 24px;
+                line-height: 38.4px;
+                margin: auto;
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 22px;
+                    width: 500px !important;
+                }
+                @media (max-width:map-get($breakpoints, xxl)) {
+                    font-size: 20px;
+                    width: 500px !important;
+                }
+                @media (max-width:map-get($breakpoints, lg)) {
+                    font-size: 18px;
+                    width: 450px !important;
+                }
+                @media (max-width:map-get($breakpoints, md)) {
+                    font-size: 16px;
+                    width: 400px !important;
+                }
+                @media (max-width:map-get($breakpoints, sm)) {
+                   font-size: 15px;
+                   width: 380px !important;
+                }
+                @media (max-width:400px) {
+                    font-size: 12px;
+                    width: 300px !important;
+                }
+            }
+        }
+    }
+    .heroSearch {
+        width: 344px;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        padding-top: 45px;
+        @media (max-width:map-get($breakpoints, lg)) {
+            width: 320px !important;
+            padding-top: 35px !important;
+        }
+        @media (max-width:map-get($breakpoints, md)) {
+            width: 300px !important;
+            padding-top: 28px !important;
+        }
+        @media (max-width:map-get($breakpoints, sm)) {
+           width: 270px !important;
+           padding-top: 23px !important;
+        }
+        @media (max-width:400px) {
+            width: 250px !important;
+            padding-top: 15px !important;
+        }
+        .heroSearchInput {
+            background: rgba(255, 255, 255, 0.15);
+            border: 0.861538px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(4px);
+            border-radius: 42px;
+            height: 56px;
+        }
+        .heroSearchInput::placeholder {
+            color: $primary-color;
+            opacity: 0.8;
+            font-family: 'Gilroy-Regular';
+            padding-left: 08px;
+            font-size: 18px;
+        }
+        .searchBtn {
+            position: absolute;
+            top: 52px;
+            right: 8px;
+            @media (max-width:map-get($breakpoints, lg)) {
+               top: 43px;
+            }
+            @media (max-width:map-get($breakpoints, md)) {
+                top: 35px !important;
+            }
+            @media (max-width:map-get($breakpoints, sm)) {
+                top: 30px !important;
+            }
+            @media (max-width:400px) {
+                top: 22px !important;
+            }
+        }
+    }
 }

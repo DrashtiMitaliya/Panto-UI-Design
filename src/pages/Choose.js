@@ -7,12 +7,12 @@ import './choose.scss'
 const Choose = () => {
   return (
     <div className="choose ">
-      <div >
-        <div className="row justify-content-around">
-          <div className="col-xxl-3  col-xl-3 col-lg-6 col-md-6 col-sm-12 choose_text">Why Choosing Us</div>
+      
+        <div className="row ">
+          <div className=" col-xl-3 col-lg-4 col-md-6 col-sm-12 choose_text">Why Choosing Us</div>
           {chooseData.map((data) => (
             <>
-              <div key={data.id} className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12  choose_items">
+              <div key={data.id} className=" col-xl-3 col-lg-4 col-md-6 col-sm-12 choose_items">
                 <div className="choose_name">{data.name}</div>
                 <div className="choose_detail">
                   <p>{data.detail}</p>
@@ -27,7 +27,7 @@ const Choose = () => {
             </>
           ))}
         </div>
-      </div>
+      
     </div>
   );
 };
