@@ -1,6 +1,11 @@
 import React from 'react';
 import './material.scss';
-import aero from '../assets/images/orange_aero.svg'
+import aero from '../assets/images/orange_aero.svg';
+import img2 from '../assets/images/materialImg1.svg';
+import img1 from '../assets/images/materialImg2.svg';
+import img3 from '../assets/images/materialImg3.svg';
+import img4 from '../assets/images/materialImg4.svg';
+
 
 const Materials = () => {
     return (
@@ -18,7 +23,10 @@ const Materials = () => {
                     </div>
                 </div>
                 <div className="col-6">
-                    vbhjnm
+                 <img src={img1} alt=""  className='m_img1'/>
+                 <img src={img2} alt="" className='m_img2' />
+                 <img src={img3} alt="" className='m_img3 ' />
+                 <img src={img4} alt=""  className='m_img3'/>
                 </div>
             </div>
         </div>
