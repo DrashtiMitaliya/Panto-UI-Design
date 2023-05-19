@@ -9,7 +9,7 @@ import aero from '../assets/images/orange_aero.svg';
 const Experience = () => {
     return (
         <div className='experience'>
-            <div className="row  me-0">
+            <div className="row text-xl-start text-lg-center text-md-center text-sm-center me-0">
                 <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 img_class ">
                   
                     <img src={exp1} alt="" className='firstBehindImg' />

@@ -1,3 +1,4 @@
+@import '../assets/scss/App.scss';
 .clients {
     margin-top: 340px;
 
@@ -29,6 +30,19 @@
 .cards {
     padding-inline: 101px;
     margin-bottom: 244px;
+
+
+    
+    @media(max-width:map-get($breakpoints,xl)){
+        padding-inline: 0px;
+    }
+    @media(max-width:map-get($breakpoints,md)){
+        padding-inline: 200px;
+    }
+
+    @media(max-width:map-get($breakpoints,sm)){
+        padding-inline: 100px;
+    }
 
     .client_card {
         position: relative;

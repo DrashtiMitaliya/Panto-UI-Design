@@ -9,7 +9,6 @@
           flex-direction: column-reverse;
         }
 
-
     }
 
     @media (max-width :map-get($breakpoints , xl)) {
@@ -18,7 +17,7 @@
 
     .text_area {
         @media (max-width :map-get($breakpoints , xl)) {
-            text-align: end;
+            // text-align: start;
         }
     }
 
@@ -34,7 +33,8 @@
         margin-bottom: 20px;
 
         @media (max-width :map-get($breakpoints , xl)) {
-            text-align: end;
+            // text-align: start;
+            
         }
 
         @media (max-width :480px) {
@@ -61,7 +61,7 @@
         @media (max-width :map-get($breakpoints , xl)) {
             margin: auto;
             width: 100%;
-            text-align: end;
+            // text-align: start;
             font-size: 32px;
             line-height: 39px;
         }
@@ -83,20 +83,19 @@
         opacity: 0.8;
         margin-bottom: 24px;
 
-        @media (max-width :1376px) {
-            width: 450px;
-        }
+        // @media (max-width :1376px) {
+        //     width: 450px;
+        // }
 
         @media (max-width :map-get($breakpoints , xl)) {
             width: 100%;
             margin-left: 0;
-            text-align: end;
+            // text-align: start;
             font-size: 15px;
         }
 
     @media (max-width :575px) {
         font-size: 11px;
-       
         line-height: 15px;
     }
     }
@@ -108,7 +107,7 @@
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin: auto;
-            text-align: end;
+            // text-align: start;
         }
         @media (max-width :575px) {
             font-size: 11px;
@@ -125,25 +124,25 @@
 
     .materialImg{
         max-width: 100%;
-        text-align: end;
+        text-align: start;
     
         @media (max-width :map-get($breakpoints , xl)) {
            
         }
 
         @media (max-width :map-get($breakpoints , lg)) {
-            text-align: end;
+            text-align: start;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
-            text-align: end;
+            text-align: start;
         }
 
         @media (max-width :map-get($breakpoints , sm)) {
-            text-align: end;
+            text-align: start;
         }
         @media (max-width :map-get($breakpoints , xs)) {
-            text-align: end;
+            text-align: start;
         }
     }
 

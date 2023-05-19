@@ -15,10 +15,9 @@
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin-inline: 120px;
+            
 
         }
-
-
         @media (max-width :map-get($breakpoints , lg)) {
             margin: auto;
         }
@@ -88,7 +87,7 @@
         font-size: 21.3251px;
         color: #0D1B39;
         margin-left: 9px;
-        margin-top: 50px;
+        margin-top: 12px;
         font-family: "Inter";
         font-style: normal;
         font-weight: 600;
