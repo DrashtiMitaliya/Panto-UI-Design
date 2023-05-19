@@ -1,183 +1,262 @@
 @import '../assets/scss/App.scss';
 
-.choose {
-    margin: 0;
+// .choose {
+//     margin: 0;
 
-    .choose_text {
-        font-family: 'Gilroy-Bold';
+//     .choose_text {
+//         font-family: 'Gilroy-Bold';
+//         font-size: 42px;
+//         line-height: 49px;
+//         color: #1E1E1E;
+//         margin-block: 158px;
+//         margin-left: 80px;
+//         width: 276px;
+//         margin-right: 102px;
+
+//         @media (max-width :map-get($breakpoints , xl)) {
+//             font-size: 40px;
+//             text-align: center;
+//             margin-block: 22px;
+//             margin-left: 65px;
+//         }
+
+//         @media (max-width :map-get($breakpoints , lg)) {
+//             font-size: 35px;
+//             text-align: center;
+//             margin-block: 20px;
+//             margin-left: 50px;
+//         }
+
+//         @media (max-width :map-get($breakpoints , md)) {
+//             font-size: 24px;
+//             text-align: center;
+//             margin-block: 10px;
+//             margin-left: -10px;
+//             margin-right: -43px;
+//         }
+
+//         @media (max-width :map-get($breakpoints , sm)) {
+//             font-size: 21px;
+//             text-align: center;
+//             margin: auto;
+//             width: 100%;
+//         }
+//     }
+
+//     .choose_items {
+//         width: 284px;
+//         margin-left: 28px;
+
+//         @media (max-width :map-get($breakpoints , xl)) {
+//             width: 250px;
+//             margin-left: 15px;
+//         }
+
+//         @media (max-width :map-get($breakpoints , lg)) {
+//             width: 200px;
+//             margin-left: 10px;
+//         }
+
+//         @media (max-width :map-get($breakpoints , md)) {
+//             width: 160px;
+//             margin-left: 5px;
+//         }
+
+//         @media (max-width :map-get($breakpoints , sm)) {
+//             margin-left: 0;
+//         }
+
+//     }
+
+//     .choose_name {
+//         font-family: 'Gilroy-Bold';
+//         font-size: 24px;
+//         margin-top: 120px;
+//         line-height: 28px;
+//         color: #1E1E1E;
+//         opacity: 0.9;
+//         margin-bottom: 20px;
+
+
+//         @media (max-width :map-get($breakpoints , xl)) {
+//             font-size: 23px;
+//             margin-top: 0px;
+//             margin-bottom: 8px;
+//             text-align: start;
+//         }
+
+//         @media (max-width :map-get($breakpoints , lg)) {
+//             font-size: 21px;
+//             margin-top: 0px;
+//             margin-bottom: 8px;
+//             text-align: start;
+//         }
+
+//         @media (max-width :map-get($breakpoints , md)) {
+//             font-size: 18px;
+//             margin-top: 0px;
+//             margin-bottom: 5px;
+//             text-align: center;
+//         }
+
+//         @media (max-width :map-get($breakpoints , sm)) {
+//             font-size: 15px;
+//             margin-top: 0px;
+//             margin-bottom: 5px;
+//             text-align: center;
+//         }
+
+//     }
+
+//     .choose_detail {
+//         font-family: 'Gilroy-Regular';
+//         font-size: 16px;
+//         line-height: 30px;
+//         color: #1E1E1E;
+//         margin-block: 20px;
+//         opacity: 0.8;
+//         width: 284px;
+
+
+//         @media (max-width :map-get($breakpoints , xl)) {
+//             width: 100%;
+//             font-size: 14px;
+//             margin-block: 8px;
+//             line-height: 22px;
+//             text-align: start;
+//         }
+
+//         @media (max-width :map-get($breakpoints , lg)) {
+//             width: 100%;
+//             font-size: 12px;
+//             margin-block: 8px;
+//             line-height: 20px;
+//             text-align: start;
+//         }
+
+
+//         @media (max-width :map-get($breakpoints , md)) {
+//             width: 100%;
+//             font-size: 11px;
+//             margin-block: 5px;
+//             line-height: 16px;
+//             text-align: center;
+//         }
+
+//         @media (max-width :map-get($breakpoints , sm)) {
+//             width: 100%;
+//             font-size: 8px;
+//             margin-block: 5px;
+//             line-height: 12px;
+//             text-align: center;
+//         }
+//     }
+
+//     .aero_text {
+//         font-family: 'Gilroy-Medium';
+//         font-size: 14px;
+//         line-height: 26px;
+//         color: #E58411;
+
+//         @media (max-width :map-get($breakpoints , lg)) {
+//             font-size: 8px;
+//             margin-block: 10px;
+//             line-height: 10px;
+//             text-align: start;
+//         }
+
+//         @media (max-width :map-get($breakpoints , md)) {
+//             font-size: 7px;
+//             margin-block: 8px;
+//             line-height: 8px;
+//             text-align: center;
+//         }
+
+//         @media (max-width :map-get($breakpoints , sm)) {
+//             font-size: 6px;
+//             margin-block: 5px;
+//             line-height: 5px;
+//             text-align: center;
+//         }
+
+//     }
+// }
+.container-fluid{
+    padding: 120px 80px 00px 80px ;
+    @media (max-width:map-get($breakpoints,lg)) {
+        padding: 80px 80px 00px 80px ;
+    }
+    @media (max-width:400px) {
+        padding: 60px 80px 00px 80px ;
+    }
+    .choose{
+        margin-inline: 80px;
+        margin-bottom: 120px;
+    }
+    .choosingUsText {
         font-size: 42px;
-        line-height: 49px;
-        color: #1E1E1E;
-        margin-block: 158px;
-        margin-left: 80px;
-        width: 276px;
-        margin-right: 102px;
-
-        @media (max-width :map-get($breakpoints , xl)) {
-            font-size: 40px;
-            text-align: center;
-            margin-block: 22px;
-            margin-left: 65px;
-        }
-
-        @media (max-width :map-get($breakpoints , lg)) {
-            font-size: 35px;
-            text-align: center;
-            margin-block: 20px;
-            margin-left: 50px;
-        }
-
-        @media (max-width :map-get($breakpoints , md)) {
-            font-size: 24px;
-            text-align: center;
-            margin-block: 10px;
-            margin-left: -10px;
-            margin-right: -43px;
-        }
-
-        @media (max-width :map-get($breakpoints , sm)) {
-            font-size: 21px;
-            text-align: center;
-            margin: auto;
-            width: 100%;
-        }
-    }
-
-    .choose_items {
-        width: 284px;
-        margin-left: 28px;
-
-        @media (max-width :map-get($breakpoints , xl)) {
-            width: 250px;
-            margin-left: 15px;
-        }
-
-        @media (max-width :map-get($breakpoints , lg)) {
-            width: 200px;
-            margin-left: 10px;
-        }
-
-        @media (max-width :map-get($breakpoints , md)) {
-            width: 160px;
-            margin-left: 5px;
-        }
-
-        @media (max-width :map-get($breakpoints , sm)) {
-            margin-left: 0;
-        }
-
-    }
-
-    .choose_name {
+        width: 242px;
         font-family: 'Gilroy-Bold';
-        font-size: 24px;
-        margin-top: 120px;
-        line-height: 28px;
-        color: #1E1E1E;
-        opacity: 0.9;
-        margin-bottom: 20px;
-
-
-        @media (max-width :map-get($breakpoints , xl)) {
-            font-size: 23px;
-            margin-top: 0px;
-            margin-bottom: 8px;
-            text-align: start;
-        }
-
-        @media (max-width :map-get($breakpoints , lg)) {
-            font-size: 21px;
-            margin-top: 0px;
-            margin-bottom: 8px;
-            text-align: start;
-        }
-
-        @media (max-width :map-get($breakpoints , md)) {
-            font-size: 18px;
-            margin-top: 0px;
-            margin-bottom: 5px;
+        text-align: left;
+        @media (max-width:map-get($breakpoints,xl)) {
+            width: 100% ;
             text-align: center;
+            padding-bottom: 20px;
         }
-
-        @media (max-width :map-get($breakpoints , sm)) {
-            font-size: 15px;
-            margin-top: 0px;
-            margin-bottom: 5px;
+        @media (max-width:map-get($breakpoints,sm)) {
+            width: 100% ;
             text-align: center;
+            padding-bottom: 10px;
+            font-size: 30px ;
+            margin-top: -10px;
         }
-
-    }
-
-    .choose_detail {
-        font-family: 'Gilroy-Regular';
-        font-size: 16px;
-        line-height: 30px;
-        color: #1E1E1E;
-        margin-block: 20px;
-        opacity: 0.8;
-        width: 284px;
-
-
-        @media (max-width :map-get($breakpoints , xl)) {
-            width: 100%;
-            font-size: 14px;
-            margin-block: 8px;
-            line-height: 22px;
-            text-align: start;
-        }
-
-        @media (max-width :map-get($breakpoints , lg)) {
-            width: 100%;
-            font-size: 12px;
-            margin-block: 8px;
-            line-height: 20px;
-            text-align: start;
-        }
-
-
-        @media (max-width :map-get($breakpoints , md)) {
-            width: 100%;
-            font-size: 11px;
-            margin-block: 5px;
-            line-height: 16px;
-            text-align: center;
-        }
-
-        @media (max-width :map-get($breakpoints , sm)) {
-            width: 100%;
-            font-size: 8px;
-            margin-block: 5px;
-            line-height: 12px;
-            text-align: center;
+        @media (max-width:400px) {
+            width: 100% ;
+            padding-bottom: 00px;
+            font-size: 25px;
         }
     }
-
-    .aero_text {
-        font-family: 'Gilroy-Medium';
-        font-size: 14px;
-        line-height: 26px;
-        color: #E58411;
-
-        @media (max-width :map-get($breakpoints , lg)) {
-            font-size: 8px;
-            margin-block: 10px;
-            line-height: 10px;
-            text-align: start;
+    .choosingUsOptions{
+        padding-left: 0px !important;
+        .choosingUsTitle{
+            font-size: 24px;
+            font-family: 'Gilroy-Bold';
+            @media (max-width:map-get($breakpoints,sm)) {
+                font-size: 20px ;
+            }
+            @media (max-width:400px) {
+                font-size: 17px ;
+            }
         }
-
-        @media (max-width :map-get($breakpoints , md)) {
-            font-size: 7px;
-            margin-block: 8px;
-            line-height: 8px;
-            text-align: center;
+        .choosingUsContent{
+            @media (max-width:map-get($breakpoints,xl)) {
+               text-align: center ;
+            }
         }
-
-        @media (max-width :map-get($breakpoints , sm)) {
-            font-size: 6px;
-            margin-block: 5px;
-            line-height: 5px;
-            text-align: center;
+        .choosingUsDescription{
+            font-size: 16px;
+            font-family: 'Gilroy-Regular';
+            line-height: 29.6px;
+            @media (max-width:map-get($breakpoints,xl)) {
+                width: 500px;
+                margin: auto;
+                font-size: 15px;
+             }
+             @media (max-width:map-get($breakpoints,sm)) {
+                width: 250px;
+                font-size: 12px;
+             }
+             @media (max-width:400px) {
+                width: 150px;
+                margin: auto;
+                font-size: 10px;
+             }
         }
-
+        .choosingUsBtn{
+            @media (max-width:map-get($breakpoints,xl)) {
+                margin-top: -15px ;
+                margin-bottom: 20px;
+             }
+        }
     }
 }

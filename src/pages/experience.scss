@@ -1,27 +1,115 @@
+@import '../assets/scss/App.scss';
+
+.experience {
+    margin-top: 240px;
+
+}
+
 .img_class {
-    margin-top: 306px;
     position: relative;
+    height: 520px;
+
+    @media (max-width :map-get($breakpoints , lg)) {
+        margin-top: -180px !important;
+    }
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-top: -167px !important;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-top: -100px !important;
+    }
+
+    @media (max-width :480px) {
+        height: 200px !important;
+    }
 
     .firstBehindImg {
         z-index: -1;
         position: absolute;
-        width: 495px;
-        left: -38px;
+        max-width: 100%;
+        left: 0;
         right: 172px;
-      top: 240px;
+        top: 0;
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            max-width: 80%;
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            max-width: 55%;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            max-width: 45%;
+        }
+
+        @media (max-width :480px) {
+            max-width: 50%;
+        }
     }
+
     .frontImg {
-        top: 306px;
+        top: 66px;
+        left: 0;
         position: absolute;
-        // width: 629px;
-        // height: 445px;
-        // margin-left: -7px;
+        max-width: 100%;
+
+        @media (max-width :map-get($breakpoints , md)) {
+            max-width: 62%;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            max-width: 64%;
+        }
+
+        @media (max-width :480px) {
+            max-width: 50%;
+            top: 32px;
+        }
+
     }
+
     .secondBehindImg {
         position: absolute;
-        left: 195px;
-        top: 378px;
+        left: 192px;
+        top: 138px;
         z-index: -1;
+        max-width: 100%;
+
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            max-width: 80%;
+            top: 100px;
+            left: 180px;
+        }
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            max-width: 80%;
+            top: 97px;
+            right: 327px
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            max-width: 56%;
+            top: 97px;
+            left: 14%;
+
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            max-width: 60%;
+            top: 97px;
+            left: 10%;
+        }
+
+        @media (max-width :480px) {
+            max-width: 50%;
+            left: 40px;
+            top: 50px;
+        }
+
     }
 }
 
@@ -32,9 +120,34 @@
     letter-spacing: 0.175em;
     color: #E58411;
     text-transform: uppercase;
-    margin-top: 323px;
+    margin-top: 83px;
     margin-left: 141px;
     margin-bottom: 20px;
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0;
+ 
+    }
+
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+        margin-top: -58px;
+    }
+
+    @media (max-width :480px) {
+        font-size: 12px !important;
+        margin-top: 20px !important;
+    }
+    @media (max-width :420px) {
+        font-size: 12px !important;
+        margin-top: 10px !important;
+    }
+
 }
 
 .title {
@@ -45,6 +158,28 @@
     text-transform: capitalize;
     width: 413px;
     color: #1E1E1E;
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    @media (max-width :map-get($breakpoints , lg)) {
+        margin-left: 0;
+    }
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :575px) {
+        font-size: 20px;
+        width: 220px;
+        line-height: 20px;
+    }
 }
 
 .detail {
@@ -54,14 +189,56 @@
     color: #1E1E1E;
     opacity: 0.8;
     margin-left: 141px;
-    width: 556px;
+    // width: 556px;
     margin-top: 20px;
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0px;
+
+        line-height: 28px;
+    }
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0px;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :575px) {
+        font-size: 11px;
+        width: 282px !important;
+        line-height: 15px;
+    }
+
 }
-.aero_text {
+
+.aero_experience {
     font-family: 'Gilroy-Medium';
     font-size: 14px;
     line-height: 26px;
     color: #E58411;
-    // margin-left: 141px;
+    margin-left: 141px;
     margin-top: 24px;
+
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0;;
+    }
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :575px) {
+        font-size: 11px;
+        width: 220px;
+        line-height: 11px;
+    }
+
 }

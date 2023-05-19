@@ -1,30 +1,115 @@
-.product { 
+@import '../assets/scss/App.scss';
+
+.product {
     background-color: #F7F7F7;
 
     .heading {
-        // font-size: 500px;
+
         font-family: 'Gilroy-Bold';
         font-size: 42px;
         line-height: 49px;
         color: #1E1E1E;
         padding-top: 50px;
-       margin: auto;
+        margin-left: 525px;
         margin-bottom: 32px;
         width: 389px;
+
+        @media (max-width:map-get($breakpoints, xl)) {
+            font-size: 36px;
+            // width: 334px;
+            margin: auto;
+            padding-block: 15px;
+            text-align: center;
+        }
+
+        @media (max-width:map-get($breakpoints, lg)) {
+            font-size: 30px;
+            width: 298px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        @media (max-width:map-get($breakpoints, md)) {
+            font-size: 25px;
+            padding-block: 15px;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+            font-size: 15px;
+            padding-block: 10px;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     .product_list {
         border-radius: 44px;
+        font-size: 18px;
+        line-height: 33px;
         width: 348px;
         margin: auto;
         justify-content: space-between;
         background: #EEEEEE;
         padding: 6px;
+
+        @media (max-width:map-get($breakpoints, xl)) {
+            width: 320px ;
+            font-size: 16px;
+            line-height: 18px;
+            padding: 8px;
+        }
+
+        @media (max-width:map-get($breakpoints, lg)) {
+            width: 280px;
+            font-size: 13px;
+            line-height: 15px;
+            padding: 3px;
+        }
+
+        @media (max-width:map-get($breakpoints, md)) {
+            width: 230px;
+            font-size: 12px;
+            line-height: 10px;
+            padding-inline: 4px;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+            font-size: 8px;
+            line-height: 5px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+            width: 150px;
+        }
     }
 
     .products {
         padding-inline: 21px;
         padding-block: 7px;
+
+        @media (max-width:map-get($breakpoints, xl)) {
+            padding-block: 15px;
+            padding-inline: 15px;
+        }
+        @media (max-width:map-get($breakpoints, lg)) {
+            padding-block: 10px;
+            padding-inline: 8px;
+        }
+
+        @media (max-width:map-get($breakpoints, md)) {
+            padding-block: 8px;
+            padding-inline: 5px;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+            padding-block: 4px;
+            padding-inline: 2px;
+        }
+
     }
 
     .active {
@@ -32,5 +117,21 @@
         background-color: white;
         border-radius: 32px;
         width: 84px;
+
+        @media (max-width:map-get($breakpoints, xl)) {
+            width: 60px;
+        }
+        @media (max-width:map-get($breakpoints, lg)) {
+            width: 48px;
+        }
+
+        @media (max-width:map-get($breakpoints, md)) {
+            width: 38px;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+            width: 25px;
+        }
+
     }
 }

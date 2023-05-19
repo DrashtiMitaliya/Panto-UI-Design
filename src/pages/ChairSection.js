@@ -4,13 +4,48 @@ import { ChairData } from ".././components/Constant/ChairData";
 import "./chairSection.scss";
 import plus from "../assets/images/Vector.svg";
 import aero from "../assets/images/orange_aero.svg";
+import Slider from "react-slick";
 
 const ChairSection = () => {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+            },
+        },
+        {
+            breakpoint: 999,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+};
+
   return (
     <div className="chair">
-      <div className=" row d-flex">
+      <div className=" row d-flex me-0  ">
+      <Slider {...settings}>
         {ChairData.map((chair) => (
-          <div className="  col-xl-3 col-lg-6 col-md-12 col-sm-12 m-sm-3">
+          <div className="  col pt-5 pb-5 ms-5">
             <div className="chairCard">
               <div className="chair_img">
                 <img className="imgs" src={chair.url} alt="" />
@@ -36,9 +71,10 @@ const ChairSection = () => {
             </div>
           </div>
         ))}
+        </Slider>
       </div>
       <div>
-        <div className="aero_text">
+        <div className="aero">
           View All <img src={aero} alt="" />
         </div>
       </div>

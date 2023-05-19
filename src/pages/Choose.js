@@ -6,22 +6,33 @@ import './choose.scss'
 
 const Choose = () => {
   return (
-    <div className="choose  ">
-      <div className="row  ms-0 me-0 justify-content-center justify-content-sm-center">
-        <div className="  choose_text">Why Choosing Us</div>
-        {chooseData.map((data) => (
-          <div key={data.id} className=" choose_items">
-            <div className="choose_name">{data.name}</div>
-            <div className="choose_detail">{data.detail}</div>
-            <div className="aero_text">
-              More Info
-              <img src={aero} alt="" />
+    <div className='container-fluid'>
+            <div className='row choose'>
+                <div className='col-xxl-4 col-xl-4 col-lg-12 my-auto'>
+                    <p className='choosingUsText'>Why
+                        Choosing Us</p>
+                </div>
+                <div className='col-xxl-8 col-xl-8 col-lg-12 choosingUsOptions'>
+                    <div className='row text-start'>
+                       {
+                        chooseData.map(item=>(
+                            <div className='col-xxl-4 col-xl-4 col-lg-12 choosingUsContent'>
+                            <div className='choosingUsTitle'>
+                                <p>{item.name}</p>
+                            </div>
+                            <div className='choosingUsDescription'>
+                                <p>{item.detail}</p>
+                            </div>
+                            <div >
+                                <img src={aero} className='choosingUsBtn' alt='this is btn imag' />
+                            </div>
+                        </div>
+                        ))
+                       }
+                    </div>
+                </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-    </div>
+        </div>
   );
 };
 

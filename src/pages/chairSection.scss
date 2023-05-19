@@ -1,12 +1,36 @@
+@import '../assets/scss/App.scss';
+.slick-slider{
+    width: 100%;
+}
 .chair {
     margin-top: 80px;
-    // margin-inline: 96px;
+
 
     .chairCard {
         background: white;
         border-radius: 20px;
         width: 268px;
         height: 442px;
+       
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            margin-inline: 120px;
+
+        }
+
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            margin: auto;
+        }
+
+
+        @media (max-width :map-get($breakpoints , md)) {
+            margin: auto;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            margin: auto;
+        }
     }
 
     .chair_img {
@@ -73,24 +97,23 @@
         color: #0D1B39
     }
 
-    .aero_text {
+    .aero {
         font-family: 'Gilroy-Medium';
         font-size: 14px;
         line-height: 26px;
         color: #E58411;
         margin-top: 60px;
-    justify-content: center;
+        text-align: center;
         padding-bottom: 50px;
-        width: 101px;
     }
 
     .plus {
-     
+
         width: 48.74px;
         height: 48.74px;
         left: 319.02px;
         top: 2190.84px;
- 
+
         align-items: flex-start;
         padding: 12.1858px;
         gap: 15.23px;

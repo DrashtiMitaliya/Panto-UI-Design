@@ -2,13 +2,18 @@
 @import './breakpoints';
 @import '../fonts//style.scss';
 
-*{
+* {
     box-sizing: border-box;
-    padding: 0 ;
-    margin: 0 ;
+    padding: 0;
+    margin: 0;
 }
-.container{
-    @media (min-width :map-get($breakpoints,xxl)){
+
+.container {
+    @media (min-width :map-get($breakpoints, xxl)) {
         max-width: 1200px !important;
     }
+}
+
+#checkdv_1 {
+    display: none !important;
 }
