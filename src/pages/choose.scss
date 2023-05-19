@@ -1,35 +1,71 @@
 @import '../assets/scss/App.scss';
 
 .choose {
-    margin-inline: 80px;
-
-    @media (max-width :map-get($breakpoints , md)) {
-        margin-inline: 4px !important;
-    }
-
-    @media (max-width :map-get($breakpoints , sm)) {
-        margin-inline: 2px !important;
-    }
+    margin: 0;
 
     .choose_text {
         font-family: 'Gilroy-Bold';
         font-size: 42px;
         line-height: 49px;
         color: #1E1E1E;
-        margin-top: 158px;
+        margin-block: 158px;
+        margin-left: 80px;
         width: 276px;
-        text-align: start;
+        margin-right: 102px;
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            font-size: 40px;
+            text-align: center;
+            margin-block: 22px;
+            margin-left: 65px;
+        }
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            font-size: 35px;
+            text-align: center;
+            margin-block: 20px;
+            margin-left: 50px;
+        }
 
         @media (max-width :map-get($breakpoints , md)) {
-            font-size: 25px !important;
-        }
-        @media (max-width :map-get($breakpoints , sm)) {
-           font-size: 21px !important;
+            font-size: 24px;
+            text-align: center;
+            margin-block: 10px;
+            margin-left: -10px;
+            margin-right: -43px;
         }
 
+        @media (max-width :map-get($breakpoints , sm)) {
+            font-size: 21px;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+        }
     }
+
     .choose_items {
         width: 284px;
+        margin-left: 28px;
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            width: 250px;
+            margin-left: 15px;
+        }
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            width: 200px;
+            margin-left: 10px;
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            width: 160px;
+            margin-left: 5px;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            margin-left: 0;
+        }
+
     }
 
     .choose_name {
@@ -39,7 +75,37 @@
         line-height: 28px;
         color: #1E1E1E;
         opacity: 0.9;
-        margin-left: 30px;
+        margin-bottom: 20px;
+
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            font-size: 23px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            text-align: start;
+        }
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            font-size: 21px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            text-align: start;
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            font-size: 18px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            font-size: 15px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
     }
 
     .choose_detail {
@@ -47,11 +113,43 @@
         font-size: 16px;
         line-height: 30px;
         color: #1E1E1E;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-inline: 28px;
+        margin-block: 20px;
         opacity: 0.8;
         width: 284px;
+
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            width: 100%;
+            font-size: 14px;
+            margin-block: 8px;
+            line-height: 22px;
+            text-align: start;
+        }
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            width: 100%;
+            font-size: 12px;
+            margin-block: 8px;
+            line-height: 20px;
+            text-align: start;
+        }
+
+
+        @media (max-width :map-get($breakpoints , md)) {
+            width: 100%;
+            font-size: 11px;
+            margin-block: 5px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            width: 100%;
+            font-size: 8px;
+            margin-block: 5px;
+            line-height: 12px;
+            text-align: center;
+        }
     }
 
     .aero_text {
@@ -59,7 +157,27 @@
         font-size: 14px;
         line-height: 26px;
         color: #E58411;
-        margin-left: 30px;
-        margin-bottom: 120px;
+
+        @media (max-width :map-get($breakpoints , lg)) {
+            font-size: 8px;
+            margin-block: 10px;
+            line-height: 10px;
+            text-align: start;
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            font-size: 7px;
+            margin-block: 8px;
+            line-height: 8px;
+            text-align: center;
+        }
+
+        @media (max-width :map-get($breakpoints , sm)) {
+            font-size: 6px;
+            margin-block: 5px;
+            line-height: 5px;
+            text-align: center;
+        }
+
     }
 }

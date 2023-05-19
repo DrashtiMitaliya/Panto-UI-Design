@@ -10,7 +10,7 @@ const ChairSection = () => {
     <div className="chair">
       <div className=" row d-flex">
         {ChairData.map((chair) => (
-          <div className="col-xxl-3  col-xl-3 col-lg-6 col-md-6 col-sm-12 m-sm-3">
+          <div className="  col-xl-3 col-lg-6 col-md-12 col-sm-12 m-sm-3">
             <div className="chairCard">
               <div className="chair_img">
                 <img className="imgs" src={chair.url} alt="" />
