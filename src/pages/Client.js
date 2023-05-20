@@ -40,8 +40,8 @@ const Client = () => {
   };
   return (
     <div className="clients">
-      <div className="row client_title">Testimonials</div>
-      <div className="row client_reviews">Our Client Reviews</div>
+      <div className="row ms-0 me-0 client_title">Testimonials</div>
+      <div className="row ms-0 me-0 client_reviews">Our Client Reviews</div>
       <div className="row me-0 ms-0 cards">
       <Slider {...settings}>
         {ClientReview.map((client) => (

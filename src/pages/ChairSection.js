@@ -45,8 +45,8 @@ const ChairSection = () => {
       <div className=" row d-flex me-0  ">
       <Slider {...settings}>
         {ChairData.map((chair) => (
-          <div className="  col pt-5 pb-5 ms-5">
-            <div className="chairCard">
+          <div className="  col pt-5 pb-5 ms-xxl-5">
+            <div className="chairCard mx-xl-3">
               <div className="chair_img">
                 <img className="imgs" src={chair.url} alt="" />
               </div>

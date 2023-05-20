@@ -2,6 +2,19 @@
 .clients {
     margin-top: 340px;
 
+    @media(max-width:map-get($breakpoints,xl)){
+        margin-top: 10px;
+    }
+
+    @media(max-width:map-get($breakpoints,lg)){
+        margin-top: 0px;
+    }
+    @media(max-width:map-get($breakpoints,md)){
+        margin-top: -50px;
+    }
+    @media(max-width:map-get($breakpoints,sm)){
+        margin-top: -100px;
+    }
     .client_title {
         font-family: 'Gilroy-Medium';
         font-size: 18px;
@@ -31,21 +44,82 @@
     padding-inline: 101px;
     margin-bottom: 244px;
 
+    .slick-prev {
+        @media (max-width :map-get($breakpoints , lg)) {
+            left: -40px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+    
+        @media (max-width :map-get($breakpoints , md)) {
+            left: -35px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        @media (max-width :map-get($breakpoints , sm)) {
+    
+            left: -36px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        
+        }
+        
+    }
+    
+    .slick-next {
+        
+        @media (max-width :map-get($breakpoints , lg)) {
+            right: -14px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+    
+        @media (max-width :map-get($breakpoints , md)) {
+            right: -35px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        @media (max-width :map-get($breakpoints , sm)) {
+    
+            right: -36px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        
+        }
+    
+        
+    }
+    
+
 
     
     @media(max-width:map-get($breakpoints,xl)){
         padding-inline: 0px;
     }
+    @media(max-width:map-get($breakpoints,lg)){
+        padding-inline: 72px;
+    }
     @media(max-width:map-get($breakpoints,md)){
-        padding-inline: 200px;
+        padding-inline: 175px;
     }
 
     @media(max-width:map-get($breakpoints,sm)){
-        padding-inline: 100px;
+        padding-inline: 80px;
+    }
+    @media(max-width:map-get($breakpoints,xs)){
+        padding-inline: 0px;
     }
 
     .client_card {
         position: relative;
+
+        
 
         .sub_card {
             position: absolute;

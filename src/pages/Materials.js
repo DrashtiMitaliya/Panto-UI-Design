@@ -10,8 +10,8 @@ import materialImgs from "../assets/images/material_image_2.svg";
 const Materials = () => {
   return (
     <div className="material">
-      <div className="row m-0">
-        <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-md-2 text-xl-start text-lg-start text-md-center text-sm-center order-sm-2 order-lg-2 order-xl-1 order-xxl-1 text_area">
+      <div className="row  ms-0 me-0 ">
+        <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-md-2 text-xl-start text-lg-center text-md-center text-sm-center order-sm-2 order-lg-2 order-xl-1 order-xxl-1 text_area">
           <div className="materials">Materials</div>
           <div className="material_title">
             Very serious materials for making furniture
@@ -28,12 +28,8 @@ const Materials = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12  order-md-1 order-sm-1 order-lg-1 order-xl-2 order-xxl-2 imgs_section">
+        <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 text-lg-end order-md-1 order-sm-1 order-lg-1 order-xl-2 order-xxl-2 imgs_section">
           <img src={materialImgs} className="materialImg" alt="" />
-          {/* <img src={img1} alt="" className="m_img1" />
-         <img src={img2} alt="" className="m_img2" />
-           <img src={img3} alt="" className="m_img3 " />
-          <img src={img4} alt="" className="m_img4" />  */}
         </div>
       </div>
     </div>

@@ -1,23 +1,77 @@
 @import '../assets/scss/App.scss';
-.slick-slider{
+
+.slick-slider {
     width: 100%;
 }
+
 .chair {
     margin-top: 80px;
 
+    .slick-prev {
+        @media (max-width :map-get($breakpoints , lg)) {
+            left: 53px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            left: 125px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        @media (max-width :map-get($breakpoints , sm)) {
+
+            left: 100px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        
+        }
+        
+    }
+
+    .slick-next {
+        
+        @media (max-width :map-get($breakpoints , lg)) {
+            right: 53px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        @media (max-width :map-get($breakpoints , md)) {
+            right: 125px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        }
+        @media (max-width :map-get($breakpoints , sm)) {
+
+            right: 100px;
+            background-color:black;
+            border-radius: 50%;
+            padding: 20px;
+        
+        }
+    
+        
+    }
 
     .chairCard {
         background: white;
         border-radius: 20px;
         width: 268px;
         height: 442px;
-       
+
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin-inline: 120px;
-            
+
 
         }
+
         @media (max-width :map-get($breakpoints , lg)) {
             margin: auto;
         }
@@ -40,6 +94,13 @@
         margin-top: -50px;
         margin-inline: 18px;
         justify-content: center;
+
+        @media (max-width :map-get($breakpoints , xs)) {
+            margin-top: 1px;
+            overflow-y: hidden;
+        }
+
+
     }
 
     .text_area {

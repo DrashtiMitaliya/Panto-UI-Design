@@ -1,27 +1,71 @@
+@import '../../assets/scss/App.scss';
 
-.footer-class{
+.footer-class {
     background-color: #F7F7F7;
     margin-top: 244px;
     padding-block: 118px;
-    // margin-inline: 180px;    
+    
+    @media(max-width:575px) {
+        text-align: center;
+    }
+    
 }
+
 .footer_main_title {
     color: #1e1e1e;
+
+    margin-left: 188px;
     font-family: 'Gilroy-Bold';
     font-size: 28px;
     letter-spacing: .01em;
     line-height: 33px;
     margin-bottom: 19px;
     text-transform: capitalize;
+
+    @media(max-width:map-get($breakpoints, lg)) {
+        margin-left: 0px ;
+    }
+    
+    @media(max-width:map-get($breakpoints, md)) { 
+        margin-left: 0px ;
+    }
+    
+    @media(max-width:map-get($breakpoints, sm)) {
+        margin: 0;
+    }
+    
+    
+    // @media(max-width:map-get($breakpoints, xl)) {
+    //     margin-left: 180px ;
+    // }
 }
 
 .footer_main_content {
-
+    width: 293px;
+    margin-left: 188px;
     font-family: 'Gilroy-Medium';
     font-size: 15px;
     line-height: 24px;
     color: #1E1E1E;
     opacity: 0.8;
+    
+    @media(max-width:map-get($breakpoints, lg)) {
+        margin: auto;
+        width: 75%;
+    }
+    @media(max-width:map-get($breakpoints, md)) { 
+        margin:auto;
+        width: 75%;
+    }
+    
+    @media(max-width:map-get($breakpoints, sm)) {
+        width: 75%;
+        margin: auto;
+    }
+    
+    
+    
+
 }
 
 .sublist_heading {
@@ -35,14 +79,68 @@
 
 
 }
-.footer_list{
+
+.footer_sub {
+    padding-left: 124px ;
+
+    @media(max-width:map-get($breakpoints, xl)) {
+        padding-left: 63px ;
+    }
+
+    @media(max-width:map-get($breakpoints, lg)) {
+        padding-left:130px;
+       
+    }
+
+    @media(max-width:map-get($breakpoints, md)) {
+        margin-inline: 0px;
+        padding-left: 0;
+    }
+    
+    @media(max-width:map-get($breakpoints, sm)) {
+        margin-inline: 0px;
+        padding-left: 0;
+    }
+}
+
+.footer_list {
     padding-inline: 55px;
 }
 
 ul {
     font-family: 'Gilroy-Medium';
     font-size: 15px;
-    line-height: 24px   ;
+    line-height: 24px;
+    color: #1E1E1E;
+    opacity: 0.8;
+}
+
+.copyright {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #1E2833; 
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    
+    
+}
+
+.terms {
+    font-family: 'Gilroy-Medium';
+    font-size: 15px;
+    line-height: 160%;
+    color: #1E1E1E;
+    opacity: 0.8;
+}
+
+.privacy {
+    font-family: 'Gilroy-Medium';
+    font-size: 15px;
+    line-height: 160%;
     color: #1E1E1E;
     opacity: 0.8;
 }

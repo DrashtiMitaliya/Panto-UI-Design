@@ -73,6 +73,11 @@
                 font-size: 10px;
              }
         }
+        .aero_choose{font-family: 'Gilroy-Medium';
+            font-size: 14px;
+            line-height: 185%;
+            color: #E58411;
+        }
         .choosingUsBtn{
             @media (max-width:map-get($breakpoints,xl)) {
                 margin-top: -15px ;

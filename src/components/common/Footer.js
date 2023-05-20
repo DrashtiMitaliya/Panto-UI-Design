@@ -9,9 +9,9 @@ const Footer = () => {
   
       <div className="footer-class">
         <div className="row">
-          <div className="col-xl-4 col-sm-12  mb-5">
+          <div className="col-xl-4 p-0 col-sm-12  mb-5">
             <div className="footer_main text-sm-center text-xl-start  ">
-              <div className="footer_main_title">
+              <div className="footer_main_title ">
                 Panto
               </div>
               <div className="footer_main_content">
@@ -41,6 +41,22 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row text-sm-center text-lg-center mt-xxl-5 mt-xl-5 mt-lg-4 mt-md-3 mt-sm-2">
+          <div className="col-xl-5 col-xxl-4 ">
+            <p className="copyright">Copyright © 2021</p>
+          </div>
+          <div className="col-lg-12 col-xl-6 col-xxl-7">
+            <div className="row justify-content-end ">
+              <div className="col-xl-4">
+                <p className="terms">Terms & Conditions</p>
+              </div>
+              
+              <div className="col-xl-4">
+                <p className="privacy">Privacy Policy</p>
+              </div>
+            </div>
+          </div>  
         </div>
 
     </div>
