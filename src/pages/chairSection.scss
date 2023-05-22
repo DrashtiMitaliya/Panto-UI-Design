@@ -8,55 +8,61 @@
     margin-top: 80px;
 
     .slick-prev {
+        z-index: 100 !important;
+
         @media (max-width :map-get($breakpoints , lg)) {
             left: 53px;
-            background-color:black;
+            background-color: black;
             border-radius: 50%;
             padding: 20px;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
             left: 125px;
-            background-color:black;
+            background-color: black;
             border-radius: 50%;
             padding: 20px;
         }
+
         @media (max-width :map-get($breakpoints , sm)) {
 
             left: 100px;
-            background-color:black;
+            background-color: black;
             border-radius: 50%;
             padding: 20px;
-        
+
         }
-        
+
     }
 
     .slick-next {
-        
+
+        z-index: 100 !important;
+
         @media (max-width :map-get($breakpoints , lg)) {
             right: 53px;
-            background-color:black;
+            background-color: black;
             border-radius: 50%;
             padding: 20px;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
             right: 125px;
-            background-color:black;
+            background-color: black;
             border-radius: 50%;
             padding: 20px;
         }
+
         @media (max-width :map-get($breakpoints , sm)) {
 
             right: 100px;
-            background-color:black;
+            background-color: black;
             border-radius: 50%;
             padding: 20px;
-        
+
         }
-    
-        
+
+
     }
 
     .chairCard {
