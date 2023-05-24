@@ -16,9 +16,10 @@
     }
 
     .text_area {
-        @media (max-width :map-get($breakpoints , xl)) {
-            // text-align: start;
+        @media (max-width :575px) {
+           text-align: center;
         }
+    
     }
 
     .materials {
@@ -65,10 +66,7 @@
             font-size: 32px;
             line-height: 39px;
         }
-        
-        @media (max-width :map-get($breakpoints , lg)) {
-          
-        }
+      
 
         @media (max-width :575px) {
             font-size: 20px;
@@ -87,9 +85,7 @@
         opacity: 0.8;
         margin-bottom: 24px;
 
-        // @media (max-width :1376px) {
-        //     width: 450px;
-        // }
+       
 
         @media (max-width :map-get($breakpoints , xl)) {
             width: 100%;
@@ -111,7 +107,7 @@
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin: auto;
-            // text-align: start;
+           
         }
         @media (max-width :575px) {
             font-size: 11px;

@@ -1,10 +1,7 @@
 import React from "react";
 import "./material.scss";
 import aero from "../assets/images/orange_aero.svg";
-// import img2 from "../assets/images/materialImg1.svg";
-// import img1 from "../assets/images/materialImg2.svg";
-// import img3 from "../assets/images/materialImg3.svg";
-// import img4 from "../assets/images/materialImg4.svg";
+
 import materialImgs from "../assets/images/material_image_2.svg";
 
 const Materials = () => {

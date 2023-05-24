@@ -7,62 +7,56 @@
 .chair {
     margin-top: 80px;
 
+
+    .slick-prev:before {
+        content: '' !important;
+    }
     .slick-prev {
-        z-index: 100 !important;
+        background: url('../assets/images/leftAero.svg');
+        background-repeat: no-repeat;
+        box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+        border-radius: 26.087px;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        background-color: white;
+        background-position: center;
 
         @media (max-width :map-get($breakpoints , lg)) {
-            left: 53px;
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
+            left: 53px;    
         }
-
         @media (max-width :map-get($breakpoints , md)) {
-            left: 125px;
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
+            left: 125px;    
         }
-
         @media (max-width :map-get($breakpoints , sm)) {
-
             left: 100px;
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
-
         }
-
+        @media (max-width :map-get($breakpoints , xs)) {
+            left: 1px;
+        }
+    }
+    .slick-next:before {
+        content: '' !important;
     }
 
     .slick-next {
-
-        z-index: 100 !important;
+        background: url('../assets/images/rightAero.svg');
+        background-repeat: no-repeat;
+        box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+        border-radius: 26.087px;
+        width: 50px;
+        z-index: 100;
+        background-color: white;
+        height: 50px;
+        background-position: center;
 
         @media (max-width :map-get($breakpoints , lg)) {
             right: 53px;
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
         }
 
-        @media (max-width :map-get($breakpoints , md)) {
-            right: 125px;
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
+        @media (max-width :map-get($breakpoints , xs)) {
+            right: 1px;
         }
-
-        @media (max-width :map-get($breakpoints , sm)) {
-
-            right: 100px;
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
-
-        }
-
-
     }
 
     .chairCard {
@@ -70,7 +64,7 @@
         border-radius: 20px;
         width: 268px;
         height: 442px;
-
+position: relative;
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin-inline: 120px;
@@ -93,14 +87,15 @@
     }
 
     .chair_img {
-        background: #FAFAFA
+        background: #FAFAFA;
+        height: 240px;
     }
 
     .imgs {
         margin-top: -50px;
         margin-inline: 18px;
         justify-content: center;
-
+        position: absolute;
         @media (max-width :map-get($breakpoints , xs)) {
             margin-top: 1px;
             overflow-y: hidden;

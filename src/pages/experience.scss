@@ -20,7 +20,7 @@
     @media (max-width :map-get($breakpoints , sm)) {
         margin-top: -100px !important;
     }
-
+   
     @media (max-width :480px) {
         height: 200px !important;
     }
@@ -112,7 +112,11 @@
 
     }
 }
-
+.text-class{
+    @media (max-width :575px) {
+        text-align: center;
+    }
+}
 .experiences {
     font-family: 'Gilroy-Medium';
     font-size: 18px;
@@ -138,7 +142,11 @@
         margin-left: 0;
         margin-top: -58px;
     }
-
+    @media (max-width :575px) {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
     @media (max-width :480px) {
         font-size: 12px !important;
         margin-top: 20px !important;
@@ -177,8 +185,8 @@
 
     @media (max-width :575px) {
         font-size: 20px;
-        width: 220px;
         line-height: 20px;
+        text-align: center;
     }
 }
 
@@ -208,8 +216,9 @@
 
     @media (max-width :575px) {
         font-size: 11px;
-        width: 282px !important;
+        
         line-height: 15px;
+        text-align: center;
     }
 
 }
@@ -237,7 +246,7 @@
 
     @media (max-width :575px) {
         font-size: 11px;
-        width: 220px;
+        text-align: center;
         line-height: 11px;
     }
 

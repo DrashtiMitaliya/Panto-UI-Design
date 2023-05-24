@@ -5,11 +5,12 @@ import Product from '../Product'
 import Experience from '../Experience'
 import Materials from '../Materials'
 import Client from '../Client'
-import Footer from '../../components/common/Footer'
+import Footer from '../../components/common/Footer';
+import '../Home/home.scss'
 
 const Home = () => {
   return (
-    <div>
+    <>
     <Main />
       <Choose />
       <Product />
@@ -17,7 +18,7 @@ const Home = () => {
       <Materials />
       <Client />
       <Footer />
-    </div>
+    </>
   )
 }
 
