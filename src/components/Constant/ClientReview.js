@@ -33,4 +33,13 @@ export const ClientReview = [
     review:
       "“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“",
   },
+  {
+    id: "r4",
+    image: client1,
+    bgImg: bgImg1,
+    title: "Bang Upin",
+    name: "Pedagang Asongan",
+    review:
+      "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
+  }
 ];

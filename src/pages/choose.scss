@@ -18,10 +18,12 @@
         width: 242px;
         font-family: 'Gilroy-Bold';
         text-align: left;
+   
         @media (max-width:map-get($breakpoints,xl)) {
             width: 100% ;
             text-align: center;
             padding-bottom: 20px;
+            margin-left: 0;
         }
         @media (max-width:map-get($breakpoints,sm)) {
             width: 100% ;

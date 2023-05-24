@@ -1,7 +1,7 @@
 import React from "react";
-import { CgFacebook } from "react-icons/cg";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
+import facebook from "../../assets/images/Facebook.svg";
+import twitter from "../../assets/images/Twitter.svg";
+import Instagram from "../../assets/images/Instagram.svg";
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-8 col-sm-12">
+          <div className="col-xl-8  col-sm-12">
             <div className="footer_sub justify-content-xl-start justify-content-between  d-xl-flex d-lg-flex d-md-flex text-md-start text-sm-center ">
               <div className="footer_list">
                 <ul className="sublist_heading">Services</ul>
@@ -51,21 +51,23 @@ const Footer = () => {
                 <ul className="sublist_heading">Follow Us </ul>
                 <ul>
                   <li>
-                    <a href="">
-                      {" "}
-                      <CgFacebook /> Facebook
+                    <img src={facebook} alt="" />
+                    <a href=""  className="ms-4">
+                   
+                      Facebook
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <img src={twitter} alt="" />
+                    <a href="" className="ms-3" >
                       {" "}
-                      <AiOutlineTwitter /> Twitter
+                      Twitter
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      {" "}
-                      <AiOutlineInstagram /> Instagram
+                    <img src={Instagram} alt="" />
+                    <a href="" className="ms-3" >
+                      Instagram
                     </a>
                   </li>
                 </ul>

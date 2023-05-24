@@ -26,4 +26,14 @@ export const ChairData =[{
     url:chair4,
     name:' Nyantuy Chair',
     price:'921'
-}]
+},
+{
+    id:'c5',
+    url: chair1,
+    name:'Sakarias Armchair',
+    price:'392'
+},
+
+
+
+]
