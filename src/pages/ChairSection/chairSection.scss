@@ -1,4 +1,4 @@
-@import '../assets/scss/App.scss';
+@import '../../assets/scss/App.scss';
 
 .slick-slider {
     width: 100%;
@@ -13,7 +13,7 @@
     }
 
     .slick-prev {
-        background: url('../assets/images/leftAero.svg');
+        background: url('../../assets/images/leftAero.svg');
         background-repeat: no-repeat;
         box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
         border-radius: 26.087px;
@@ -44,13 +44,18 @@
             left: 1px;
         }
     }
+    .slick-prev:focus,
+    .slick-prev:hover {
+       background-position: center;
+       background-repeat: no-repeat;
+    }
 
     .slick-next:before {
         content: '' !important;
     }
 
     .slick-next {
-        background: url('../assets/images/rightAero.svg');
+        background: url('../../assets/images/rightAero.svg');
         background-repeat: no-repeat;
         box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
         border-radius: 26.087px;
@@ -65,6 +70,7 @@
             right: -9px;
             top: 45%;
         }
+
         @media (max-width :map-get($breakpoints , lg)) {
             right: 15px;
         }
@@ -79,6 +85,12 @@
 
         @media (max-width :map-get($breakpoints , xs)) {
             right: 1px;
+        }
+
+        .slick-next:focus,
+        .slick-next:hover {
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 
@@ -172,12 +184,12 @@
     .price {
         font-size: 21.3251px;
         color: #0D1B39;
-    
+
         margin-top: 12px;
         font-family: "Inter";
         font-style: normal;
         font-weight: 600;
-      
+
         line-height: 36px;
         color: #0D1B39
     }

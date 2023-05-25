@@ -1,12 +1,17 @@
-@import '../assets/scss/App.scss';
+@import '../../assets/scss/App.scss';
 
 .material {
     margin-top: 100px;
     margin-bottom: 200px;
 
-    .row{
+    @include xs{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .row {
         @media (max-width :575px) {
-          flex-direction: column-reverse;
+            flex-direction: column-reverse;
         }
 
     }
@@ -17,9 +22,9 @@
 
     .text_area {
         @media (max-width :575px) {
-           text-align: center;
+            text-align: center;
         }
-    
+
     }
 
     .materials {
@@ -35,7 +40,7 @@
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin-left: 0;
-            
+
         }
 
         @media (max-width :480px) {
@@ -66,12 +71,12 @@
             font-size: 32px;
             line-height: 39px;
         }
-      
+
 
         @media (max-width :575px) {
-            font-size: 20px;
             margin-bottom: 20px;
-            line-height: 20px;
+            font-size: 29px;
+            line-height: 1.5;
         }
     }
 
@@ -85,19 +90,27 @@
         opacity: 0.8;
         margin-bottom: 24px;
 
-       
 
-        @media (max-width :map-get($breakpoints , xl)) {
+
+        @include xl {
             width: 100%;
             margin-left: 0;
-            // text-align: start;
-            font-size: 15px;
+            font-size: 18px;
+            line-height: 2;
         }
 
-    @media (max-width :575px) {
-        font-size: 11px;
-        line-height: 15px;
-    }
+        @include sm {
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        @include xs {
+            text-align: justify;
+            margin-left: 0;
+            font-size: 13px;
+            line-height: 28px;
+
+        }
     }
 
     .aero_symbol {
@@ -107,8 +120,9 @@
 
         @media (max-width :map-get($breakpoints , xl)) {
             margin: auto;
-           
+
         }
+
         @media (max-width :575px) {
             font-size: 11px;
             line-height: 11px;
@@ -120,15 +134,13 @@
     position: relative;
     top: 170px;
     height: 560px;
-   
 
-    .materialImg{
+
+    .materialImg {
         max-width: 100%;
         text-align: start;
-    
-        @media (max-width :map-get($breakpoints , xl)) {
-           
-        }
+
+        @media (max-width :map-get($breakpoints , xl)) {}
 
         @media (max-width :map-get($breakpoints , lg)) {
             text-align: start;
@@ -141,6 +153,7 @@
         @media (max-width :map-get($breakpoints , sm)) {
             text-align: start;
         }
+
         @media (max-width :map-get($breakpoints , xs)) {
             text-align: start;
         }

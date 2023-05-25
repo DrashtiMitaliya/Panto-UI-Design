@@ -1,7 +1,7 @@
 import React from "react";
-import search from "../assets/images/Search.svg";
+import search from "../../assets/images/Search.svg";
 import './heading.scss'
-import Header from "../components/common/Header";
+import Header from "../../components/common/Header";
 import { Form } from 'react-bootstrap';
 
 const Heading = () => {

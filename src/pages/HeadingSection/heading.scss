@@ -1,8 +1,8 @@
-@import '../assets/scss/App.scss';
+@import '../../assets/scss/App.scss';
 
 .hero {
     height: 1084px;
-    background: url(../assets/images/heroImg.png);
+    background: url(../../assets/images/heroImg.png);
     background-repeat: no-repeat;
     background-size: cover;
     @media (max-width:map-get($breakpoints, xxl)) {

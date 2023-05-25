@@ -1,12 +1,12 @@
 import React from "react";
 import "./material.scss";
-import aero from "../assets/images/orange_aero.svg";
+import aero from "../../assets/images/orange_aero.svg";
 
-import materialImgs from "../assets/images/material_image_2.svg";
+import materialImgs from "../../assets/images/material_image_2.svg";
 
 const Materials = () => {
   return (
-    <div className="material">
+    <div className="material container-fluid pe-0 ps-0">
       <div className="row  ms-0 me-0 ">
         <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 order-md-2 text-xl-start text-lg-center text-md-center text-sm-center order-sm-2 order-lg-2 order-xl-1 order-xxl-1 text_area">
           <div className="materials">Materials</div>

@@ -1,0 +1,135 @@
+@import '../../assets/scss/App.scss';
+
+
+.container-fluid {
+    padding: 120px 80px 00px 80px;
+
+    @media (max-width:map-get($breakpoints, lg)) {
+        padding: 80px 80px 00px 80px;
+    }
+
+    @media (max-width:400px) {
+        padding: 60px 80px 00px 80px;
+    }
+
+    .choose {
+        margin-inline: 80px;
+        margin-bottom: 120px;
+
+          
+       @include sm{
+            margin-inline: 0;
+            margin-bottom: 50px;
+        }
+        @media (max-width:426px) {
+            margin-inline: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    .choosingUsText {
+        font-size: 42px;
+        width: 242px;
+        font-family: 'Gilroy-Bold';
+        text-align: left;
+        @media (max-width:map-get($breakpoints, xl)) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-left: 0;
+        }
+
+        @media (max-width:map-get($breakpoints, sm)) {
+        
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 30px;
+            margin: auto;
+            margin-top: -10px;
+        }
+
+        @media (max-width:400px) {
+            width: 100%;
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+    }
+
+    .choosingUsOptions {
+        padding-left: 0px !important;
+
+        .choosingUsTitle {
+            font-size: 24px;
+            font-family: 'Gilroy-Bold';
+
+            @media (max-width:map-get($breakpoints, sm)) {
+                font-size: 22px;
+            }
+
+            @media (max-width:400px) {
+                font-size: 19px;
+                line-height: 2;
+            }
+        }
+
+        .choosingUsContent {
+            @media (max-width:map-get($breakpoints, xl)) {
+                text-align: center;
+
+            }
+
+            @media (max-width:400px) {
+               margin-bottom: 32px;
+              
+            }
+        }
+
+        .choosingUsDescription {
+            font-size: 16px;
+            font-family: 'Gilroy-Regular';
+            line-height: 29.6px;
+
+            @media (max-width:map-get($breakpoints, xl)) {
+
+                // margin: auto;
+                font-size: 20px;
+                line-height: 39.6px;
+            }
+
+            @media (max-width:map-get($breakpoints, sm)) {
+
+                font-size: 18px;
+                line-height: 27.6px;
+            }
+
+            @media (max-width:400px) {
+                font-size: 15px;
+                line-height: 24.6px;
+            }
+        }
+
+        .aero_choose {
+            font-family: 'Gilroy-Medium';
+            font-size: 14px;
+            line-height: 185%;
+            color: #E58411;
+
+            @media (max-width:400px) {
+                width: 150px;
+                margin: auto;
+                font-size: 8px;
+
+            }
+
+
+        }
+
+        .choosingUsBtn {
+            @media (max-width:map-get($breakpoints, xl)) {
+                margin-top: -15px;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}

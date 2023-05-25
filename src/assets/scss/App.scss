@@ -19,7 +19,7 @@
         margin-inline: 80px;
 
         @media (max-width:map-get($breakpoints, sm)) {
-            margin-inline: 0;
+            margin-inline: -24px;
         }
     }
 
@@ -105,6 +105,7 @@
 
     @media(max-width:575px) {
         text-align: center;
+        margin-top: 86px;
     }
 
     .footer-container {
@@ -115,7 +116,6 @@
 
 .footer_main_title {
     color: #1e1e1e;
-
     width: 293px;
     margin-inline: auto;
     font-family: 'Gilroy-Bold';
@@ -215,7 +215,7 @@ ul {
     .icon{
         width: 30px;
         margin-right: 0;
-        // text-align: center;
+     
         
     }
     color: #1E1E1E;
@@ -240,12 +240,14 @@ ul {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    
     letter-spacing: -0.204545px;
     color: #1E2833;
     mix-blend-mode: normal;
     opacity: 0.5;
 
+    @include xs{
+        line-height: 4;
+    }
 
 }
 

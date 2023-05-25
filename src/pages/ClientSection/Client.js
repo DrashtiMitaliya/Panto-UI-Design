@@ -1,8 +1,8 @@
 import React from "react";
 import "./client.scss";
-import { ClientReview } from "../components/Constant/ClientReview";
-import union from "../assets/images/Union.svg";
-import ratingStar from "../assets/images/rating_star.svg";
+import { ClientReview } from "../../components/Constant/ClientReview";
+import union from "../../assets/images/Union.svg";
+import ratingStar from "../../assets/images/rating_star.svg";
 import Slider from "react-slick";
 
 const Client = () => {

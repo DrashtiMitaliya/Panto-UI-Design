@@ -1,0 +1,151 @@
+@import '../../assets/scss/App.scss';
+
+.experience {
+    margin-top: 240px;
+
+    @media (max-width :map-get($breakpoints , sm)) {
+       
+        margin-top: 90px;
+    }
+
+}
+
+.img_class {
+    .groupImage{
+        max-width: 100%;
+    }
+}
+.text-class{
+    @media (max-width :575px) {
+        text-align: center;
+    }
+}
+.experiences {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.175em;
+    color: #E58411;
+    text-transform: uppercase;
+    margin-top: 83px;
+    margin-left: 141px;
+    margin-bottom: 20px;
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0;
+    }
+
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+        margin-top: 35px;
+    }
+    @media (max-width :575px) {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+   
+   
+
+}
+
+.title {
+    font-family: 'Gilroy-Bold';
+    font-size: 42px;
+    line-height: 49px;
+    margin-left: 141px;
+    text-transform: capitalize;
+    width: 413px;
+    color: #1E1E1E;
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    @media (max-width :map-get($breakpoints , lg)) {
+        margin-left: 0;
+    }
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0;
+    }
+
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+    }
+}
+
+.detail {
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 33px;
+    color: #1E1E1E;
+    opacity: 0.8;
+    margin-left: 141px;
+    margin-top: 20px;
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0px;
+        line-height: 2;
+     
+    }
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0px;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+        font-size: 17px;
+        line-height: 28px;
+        text-align: justify;
+    }
+
+  @include xs {
+        text-align: justify;
+        margin-left: 0;
+        font-size: 13px;
+        line-height: 32px;
+        margin-inline: 13px;
+    }
+    
+
+}
+
+.aero_experience {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 26px;
+    color: #E58411;
+    margin-left: 141px;
+    margin-top: 24px;
+
+
+    @media (max-width :map-get($breakpoints , xl)) {
+        margin-left: 0;;
+    }
+
+    @media (max-width :map-get($breakpoints , md)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :map-get($breakpoints , sm)) {
+        margin-left: 0;
+    }
+
+    @media (max-width :575px) {
+        font-size: 11px;
+        text-align: center;
+        line-height: 11px;
+    }
+
+}

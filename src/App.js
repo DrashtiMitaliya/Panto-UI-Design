@@ -1,12 +1,24 @@
 // import "./assets/scss/App.scss";
+import Main from './pages/MainSection/Main'
+import Choose from "./pages/ChooseSection/Choose";
+import Product from './pages/ProductSection/Product'
+import Experience from './pages/ExperienceSection/Experience';
+import Materials from './pages/MaterialSection/Materials';
+import Client from './pages/ClientSection/Client';
+import Footer from './components/common/Footer';
 
-import Home from "./pages/Home/Home";
 
 function App() {
   return (
-   
-      <Home/>
-   
+    <>
+      <Main/>
+      <Choose />
+      <Product/>
+      <Experience />
+      <Materials />
+      <Client/>
+      <Footer/>
+    </>
   );
 }
 

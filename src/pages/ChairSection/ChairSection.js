@@ -1,11 +1,10 @@
 import React from "react";
-import ".././components/Constant/ChairData";
-import { ChairData } from ".././components/Constant/ChairData";
-import plus from "../assets/images/Vector.svg";
-import aero from "../assets/images/orange_aero.svg";
+import { ChairData } from "../../components/Constant/ChairData";
+import plus from "../../assets/images/Vector.svg";
+import aero from "../../assets/images/orange_aero.svg";
 import Slider from "react-slick";
 import "./chairSection.scss";
-import fiveStar from '../assets/images/5Star.svg'
+import fiveStar from '../../assets/images/5Star.svg'
 
 const ChairSection = () => {
   var settings = {

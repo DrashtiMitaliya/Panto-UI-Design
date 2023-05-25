@@ -1,4 +1,4 @@
-@import '../assets/scss/App.scss';
+@import '../../assets/scss/App.scss';
 
 .clients {
     margin-top: 340px;
@@ -43,6 +43,17 @@
         margin-top: 20px;
         justify-content: center;
         margin-bottom: 60px;
+
+
+        @include xs {
+            font-size: 29px;
+            line-height: 41px;
+            margin-top: 8px;
+            justify-content: center;
+            margin-bottom: 56px;
+        }
+
+
     }
 }
 
@@ -78,7 +89,7 @@
     }
 
     .slick-prev {
-        background: url('../assets/images/leftAero.svg');
+        background: url('../../assets/images/leftAero.svg');
         background-repeat: no-repeat;
         box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
         border-radius: 26.087px;
@@ -96,8 +107,9 @@
         @media (max-width :map-get($breakpoints , xl)) {
             left: -2px;
         }
+
         @media (max-width :map-get($breakpoints , lg)) {
-            left: 140px;
+            left: 30px;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
@@ -118,7 +130,7 @@
     }
 
     .slick-next {
-        background: url('../assets/images/rightAero.svg');
+        background: url('../../assets/images/rightAero.svg');
         background-repeat: no-repeat;
         box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
         border-radius: 26.087px;
@@ -138,7 +150,7 @@
         }
 
         @media (max-width :map-get($breakpoints , lg)) {
-            right: 140px;
+            right: 30px;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
@@ -153,10 +165,7 @@
             right: 1px;
         }
     }
-
-
 }
-
 
 .imgCard {
     position: relative;
@@ -185,8 +194,9 @@
         @include sm {
             margin: auto;
         }
+
         @media(max-width:396px) {
-            width: 97%  ;
+            width: 97%;
             left: -4%;
         }
 
@@ -215,17 +225,13 @@
             position: absolute;
             top: 10%;
 
-            // @include lg {
-            //     top: 11%;
-            //     left: 21%;
-            //     width: 343px;
-            // }
 
-            @media(max-width:992px){
+            @media(max-width:992px) {
                 top: 11%;
                 left: 6%;
                 width: 343px;
             }
+
             @media(max-width:991px) and (min-width:769px) {
                 top: 11%;
                 left: 21.5%;
@@ -234,7 +240,7 @@
 
             @include md {
                 top: 11%;
-                left:21%;
+                left: 21%;
                 width: 343px;
             }
 
@@ -244,7 +250,7 @@
                 width: 335px !important;
             }
 
-            @media(max-width:575px){
+            @media(max-width:575px) {
                 top: 11%;
                 left: 13%;
                 width: 343px;
@@ -286,28 +292,33 @@
                 left: 2.8%;
                 width: 335px;
             }
+
             @media(max-width:448px) and (min-width:440px) {
                 top: 11%;
                 left: 3%;
                 width: 335px;
             }
+
             @media(max-width:439px) and (min-width:397px) {
                 top: 11%;
                 left: -1%;
                 width: 335px;
             }
+
             @media(max-width:397px) and (min-width:390px) {
                 top: 11%;
                 left: 1%;
                 width: 310px;
 
             }
+
             @media(max-width:389px) and (min-width:351px) {
                 top: 11%;
                 left: 0%;
                 width: 310px;
 
             }
+
             @media(max-width:350px) and (min-width:320px) {
                 top: 11%;
                 left: -11%;
@@ -330,6 +341,7 @@
                     margin-top: 10%;
 
                 }
+
                 @include xs {
                     width: 90%;
                 }
@@ -342,14 +354,15 @@
                     @media(max-width:map-get($breakpoints, lg)) {
                         left: 44%;
                     }
+
                     @include xs {
                         width: 12%;
 
                         top: -10%;
                     }
-                    
 
-                    
+
+
 
                 }
 
@@ -363,9 +376,10 @@
                     padding-top: 13px;
                     margin-bottom: 6px;
                     letter-spacing: 0;
+
                     @include xs {
                         margin-bottom: 3px;
-                        padding-top: 8px;
+                        padding-top: 0px;
                     }
                 }
 
@@ -392,10 +406,12 @@
                     color: #1E1E1E;
                     opacity: 0.8;
                     margin-top: 22px;
+
                     @include xs {
                         margin-top: 8px;
+                    }
                 }
-            }
+
                 .client_star {
                     position: absolute;
                     top: 180px;
@@ -403,7 +419,7 @@
                     width: 90px;
 
                     @include xs {
-                        top:143px;
+                        top: 140px;
                     }
 
                 }

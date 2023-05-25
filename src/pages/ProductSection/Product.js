@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./product.scss";
 import { Nav } from "react-bootstrap";
-import ChairSection from "./ChairSection";
+import ChairSection from "../ChairSection/ChairSection";
 
 const Product = () => {
   const [activeProduct, setActiveProduct] = useState("Chair");
