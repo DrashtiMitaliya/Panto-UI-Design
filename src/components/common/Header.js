@@ -19,7 +19,7 @@ const Header = () => {
               <NavDropdown
                 title="Furniture"
                 id="basic-nav-dropdown"
-                className="pantoDropdown text-center ms-md-2 ms-sm-2"
+                className="pantoDropdown text-center ps-5 ms-md-2 ms-sm-2"
               >
                 <NavDropdown.Item
                   href="#action/3.1"

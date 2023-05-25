@@ -3,6 +3,8 @@
 .clients {
     margin-top: 340px;
 
+
+
     @media(max-width:map-get($breakpoints, xl)) {
         margin-top: 10px;
     }
@@ -83,10 +85,19 @@
         width: 50px;
         height: 50px;
         background-position: center;
+        background-color: white;
         z-index: 100 !important;
 
+        @media (max-width :1440px) {
+            left: -6px;
+            top: 34%;
+        }
+
+        @media (max-width :map-get($breakpoints , xl)) {
+            left: -2px;
+        }
         @media (max-width :map-get($breakpoints , lg)) {
-            left: 26px;
+            left: 140px;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
@@ -117,14 +128,17 @@
         background-color: white;
         z-index: 100 !important;
 
-
+        @media (max-width :1440px) {
+            right: -6px;
+            top: 34%;
+        }
 
         @media (max-width :map-get($breakpoints , xl)) {
-            right: -19px;
+            right: 1px;
         }
 
         @media (max-width :map-get($breakpoints , lg)) {
-            right: 26px;
+            right: 140px;
         }
 
         @media (max-width :map-get($breakpoints , md)) {
@@ -140,7 +154,7 @@
         }
     }
 
- 
+
 }
 
 
@@ -171,15 +185,19 @@
         @include sm {
             margin: auto;
         }
+        @media(max-width:396px) {
+            width: 97%  ;
+            left: -4%;
+        }
 
 
     }
 
     .textCard {
         position: absolute;
-        bottom: 5%;
-        right: 5%;
-        left: 5%;
+        bottom: 3%;
+        right: 7%;
+        left: 7%;
 
         @media(max-width:map-get($breakpoints, lg)) {
             margin: auto;
@@ -197,68 +215,105 @@
             position: absolute;
             top: 10%;
 
-            @include lg {
+            // @include lg {
+            //     top: 11%;
+            //     left: 21%;
+            //     width: 343px;
+            // }
+
+            @media(max-width:992px){
                 top: 11%;
-                left: 8%;
+                left: 6%;
                 width: 343px;
             }
-
-            @media(max-width:991px) {
+            @media(max-width:991px) and (min-width:769px) {
                 top: 11%;
-                left: 22%;
+                left: 21.5%;
                 width: 335px;
             }
 
             @include md {
                 top: 11%;
-                left: 22%;
+                left:21%;
                 width: 343px;
             }
 
-            @media(max-width:767px) and (min-width:575px) {
+            @media(max-width:767px) and (min-width:576px) {
                 top: 11% !important;
-                left: 13% !important;
+                left: 11.5% !important;
                 width: 335px !important;
             }
 
-            @include sm {
+            @media(max-width:575px){
                 top: 11%;
-                left: 12%;
+                left: 13%;
                 width: 343px;
             }
 
 
-
-            @media(max-width:575px) and (min-width:556px) {
+            @media(max-width:574px) and (min-width:556px) {
                 top: 11%;
-                left: 14.5%;
+                left: 11.5%;
                 width: 335px;
             }
 
-            @media(max-width:554px) and (min-width:535px) {
-                top: 11%;
-                left: 13%;
-                width: 335px;
-            }
-
-            @media(max-width:534px) and (min-width:509px) {
+            @media(max-width:555px) and (min-width:536px) {
                 top: 11%;
                 left: 12%;
                 width: 335px;
             }
 
-            @media(max-width:508px) and (min-width:500px) {
+            @media(max-width:535px) and (min-width:506px) {
                 top: 11%;
-                left: 11%;
+                left: 10.2%;
                 width: 335px;
             }
 
-            @media(max-width:449px) and (min-width:320px) {
+            @media(max-width:505px) and (min-width:500px) {
+                top: 11%;
+                left: 8%;
+                width: 335px;
+            }
+
+            @media(max-width:499px) and (min-width:470px) {
+                top: 11%;
+                left: 6%;
+                width: 335px;
+            }
+
+            @media(max-width:469px) and (min-width:449px) {
+                top: 11%;
+                left: 2.8%;
+                width: 335px;
+            }
+            @media(max-width:448px) and (min-width:440px) {
+                top: 11%;
+                left: 3%;
+                width: 335px;
+            }
+            @media(max-width:439px) and (min-width:397px) {
                 top: 11%;
                 left: -1%;
                 width: 335px;
             }
+            @media(max-width:397px) and (min-width:390px) {
+                top: 11%;
+                left: 1%;
+                width: 310px;
 
+            }
+            @media(max-width:389px) and (min-width:351px) {
+                top: 11%;
+                left: 0%;
+                width: 310px;
+
+            }
+            @media(max-width:350px) and (min-width:320px) {
+                top: 11%;
+                left: -11%;
+                width: 310px;
+
+            }
 
             .details {
                 padding-inline: 11%;
@@ -268,7 +323,6 @@
 
                 @media(max-width:map-get($breakpoints, lg)) {
                     margin: auto;
-                    // width: 100%;
                     margin-top: 10%;
                 }
 
@@ -276,7 +330,9 @@
                     margin-top: 10%;
 
                 }
-
+                @include xs {
+                    width: 90%;
+                }
 
                 .clientImg {
                     position: absolute;
@@ -286,10 +342,14 @@
                     @media(max-width:map-get($breakpoints, lg)) {
                         left: 44%;
                     }
+                    @include xs {
+                        width: 12%;
 
-                    @media(max-width:map-get($breakpoints, md)) {}
+                        top: -10%;
+                    }
+                    
 
-                    @include sm {}
+                    
 
                 }
 
@@ -300,7 +360,13 @@
                     text-align: center;
                     text-transform: capitalize;
                     color: #1E1E1E;
+                    padding-top: 13px;
                     margin-bottom: 6px;
+                    letter-spacing: 0;
+                    @include xs {
+                        margin-bottom: 3px;
+                        padding-top: 8px;
+                    }
                 }
 
                 .client_name {
@@ -311,22 +377,35 @@
                     color: #1E1E1E;
                     opacity: 0.6;
                     margin-bottom: 12px;
+
+                    @include xs {
+                        margin-bottom: 3px;
+                    }
+
                 }
 
-                .client_reviews {
+                .client_detail {
                     font-family: 'Gilroy-Regular';
                     font-size: 14px;
                     line-height: 16px;
                     text-align: center;
                     color: #1E1E1E;
                     opacity: 0.8;
+                    margin-top: 22px;
+                    @include xs {
+                        margin-top: 8px;
                 }
-
+            }
                 .client_star {
                     position: absolute;
                     top: 180px;
                     left: 120px;
                     width: 90px;
+
+                    @include xs {
+                        top:143px;
+                    }
+
                 }
 
             }
